@@ -1,0 +1,235 @@
+<style>
+	div.category-products ul { 
+	list-style: none; 
+	padding-left: 0px; 
+}
+</style>
+	<h2>Sản phẩm mới</h2>
+	<div class="category-products">        
+												        
+															<ul class="products-grid">
+												<li class="item first">
+																		<div class="label-sale">
+											<a href="http://localhost/watchshop/plaid-cotton-shirt-royal-blue-l.html?___SID=U" title="Plaid Cotton Shirt-Royal Blue-L">
+												<img src="http://localhost/watchshop/skin/frontend/default/pagayo-theme-003/images/label-sale.png" />
+											</a>
+										</div> 
+																																<a href="http://localhost/watchshop/plaid-cotton-shirt-royal-blue-l.html?___SID=U" title="Plaid Cotton Shirt-Royal Blue-L" class="product-image">
+									<img src="http://localhost/watchshop/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/m/s/msj006c-royal-blue.jpg" alt="Plaid Cotton Shirt-Royal Blue-L" />
+								</a>
+								<div class="item-review">							
+																
+								</div>
+								<div class="item-bottom">
+									<h3 class="product-name"><a href="http://localhost/watchshop/plaid-cotton-shirt-royal-blue-l.html?___SID=U" title="Plaid Cotton Shirt-Royal Blue-L)">Plaid Cotton Shirt-Royal Blue-L</a></h3>
+									
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Giá thông thường:</span>
+                <span class="price" id="old-price-905">
+                    160,00 ₫                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                <span class="price" id="product-price-905">
+                    100,00 ₫                </span>
+                </p>
+                    
+    
+        </div>
+
+									
+									<div class="actions">
+																					<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/watchshop/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC93YXRjaHNob3Av/product/905/form_key/WjcuoGcqpNFvqkNR/?___SID=U')"><span><span>Đặt mua</span></span></button>
+																				
+									</div>
+								</div>
+							</li>					
+																					<li class="item">
+																		<div class="label-sale">
+											<a href="http://localhost/watchshop/t035-617-11-031-00.html?___SID=U" title="T035.617.11.031.00">
+												<img src="http://localhost/watchshop/skin/frontend/default/pagayo-theme-003/images/label-sale.png" />
+											</a>
+										</div> 
+																																<a href="http://localhost/watchshop/t035-617-11-031-00.html?___SID=U" title="T035.617.11.031.00" class="product-image">
+									<img src="http://localhost/watchshop/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/3/5/350_t0356171103100.jpg" alt="T035.617.11.031.00" />
+								</a>
+								<div class="item-review">							
+																
+								</div>
+								<div class="item-bottom">
+									<h3 class="product-name"><a href="http://localhost/watchshop/t035-617-11-031-00.html?___SID=U" title="T035.617.11.031.00)">T035.617.11.031.00</a></h3>
+									
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Giá thông thường:</span>
+                <span class="price" id="old-price-906">
+                    100,00 ₫                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                <span class="price" id="product-price-906">
+                    90,00 ₫                </span>
+                </p>
+                    
+    
+        </div>
+
+									
+									<div class="actions">
+																					<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/watchshop/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC93YXRjaHNob3Av/product/906/form_key/WjcuoGcqpNFvqkNR/?___SID=U')"><span><span>Đặt mua</span></span></button>
+																				
+									</div>
+								</div>
+							</li>					
+																					<li class="item">
+																																<a href="http://localhost/watchshop/chelsea-tee-790.html?___SID=U" title="Chelsea Tee" class="product-image">
+									<img src="http://localhost/watchshop/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/m/t/mtk004t.jpg" alt="Chelsea Tee" />
+								</a>
+								<div class="item-review">							
+																
+								</div>
+								<div class="item-bottom">
+									<h3 class="product-name"><a href="http://localhost/watchshop/chelsea-tee-790.html?___SID=U" title="Chelsea Tee)">Chelsea Tee</a></h3>
+									
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-410">
+                                            <span class="price">75,00 ₫</span>                                    </span>
+                        
+        </div>
+
+									
+									<div class="actions">
+																					<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/watchshop/chelsea-tee-790.html?___SID=U')"><span><span>Đặt mua</span></span></button>
+																				
+									</div>
+								</div>
+							</li>					
+																					<li class="item">
+																																<a href="http://localhost/watchshop/lafayette-convertible-dress.html?___SID=U" title="Lafayette Convertible Dress" class="product-image">
+									<img src="http://localhost/watchshop/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/w/s/wsd013t.jpg" alt="Lafayette Convertible Dress" />
+								</a>
+								<div class="item-review">							
+									    <div class="ratings">
+                    <div class="rating-box">
+                <div class="rating" style="width:100%"></div>
+            </div>
+                <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://localhost/watchshop/review/product/list/id/425/?___SID=U'; return false;">2 Review(s)</a></span>
+    </div>
+							
+								</div>
+								<div class="item-bottom">
+									<h3 class="product-name"><a href="http://localhost/watchshop/lafayette-convertible-dress.html?___SID=U" title="Lafayette Convertible Dress)">Lafayette Convertible Dress</a></h3>
+									
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-425">
+                                            <span class="price">340,00 ₫</span>                                    </span>
+                        
+        </div>
+
+									
+									<div class="actions">
+																					<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/watchshop/lafayette-convertible-dress.html?___SID=U')"><span><span>Đặt mua</span></span></button>
+																				
+									</div>
+								</div>
+							</li>					
+																					<li class="item last">
+																																<a href="http://localhost/watchshop/tori-tank-640.html?___SID=U" title="Tori Tank" class="product-image">
+									<img src="http://localhost/watchshop/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/w/b/wbk003t.jpg" alt="Tori Tank" />
+								</a>
+								<div class="item-review">							
+																
+								</div>
+								<div class="item-bottom">
+									<h3 class="product-name"><a href="http://localhost/watchshop/tori-tank-640.html?___SID=U" title="Tori Tank)">Tori Tank</a></h3>
+									
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-418">
+                                            <span class="price">60,00 ₫</span>                                    </span>
+                        
+        </div>
+
+									
+									<div class="actions">
+																					<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/watchshop/tori-tank-640.html?___SID=U')"><span><span>Đặt mua</span></span></button>
+																				
+									</div>
+								</div>
+							</li>					
+											</ul>
+																				<ul class="products-grid">
+												<li class="item first">
+																																<a href="http://localhost/watchshop/linen-blazer-623.html?___SID=U" title="Linen Blazer" class="product-image">
+									<img src="http://localhost/watchshop/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/m/s/msj012t_2.jpg" alt="Linen Blazer" />
+								</a>
+								<div class="item-review">							
+									    <div class="ratings">
+                    <div class="rating-box">
+                <div class="rating" style="width:100%"></div>
+            </div>
+                <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://localhost/watchshop/review/product/list/id/406/?___SID=U'; return false;">1 Review(s)</a></span>
+    </div>
+							
+								</div>
+								<div class="item-bottom">
+									<h3 class="product-name"><a href="http://localhost/watchshop/linen-blazer-623.html?___SID=U" title="Linen Blazer)">Linen Blazer</a></h3>
+									
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-406">
+                                            <span class="price">455,00 ₫</span>                                    </span>
+                        
+        </div>
+
+									
+									<div class="actions">
+																					<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/watchshop/linen-blazer-623.html?___SID=U')"><span><span>Đặt mua</span></span></button>
+																				
+									</div>
+								</div>
+							</li>					
+																					<li class="item">
+																																<a href="http://localhost/watchshop/elizabeth-knit-top-642.html?___SID=U" title="Elizabeth Knit Top" class="product-image">
+									<img src="http://localhost/watchshop/media/catalog/product/cache/1/small_image/210x/9df78eab33525d08d6e5fb8d27136e95/w/b/wbk012t.jpg" alt="Elizabeth Knit Top" />
+								</a>
+								<div class="item-review">							
+																
+								</div>
+								<div class="item-bottom">
+									<h3 class="product-name"><a href="http://localhost/watchshop/elizabeth-knit-top-642.html?___SID=U" title="Elizabeth Knit Top)">Elizabeth Knit Top</a></h3>
+									
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-421">
+                                            <span class="price">210,00 ₫</span>                                    </span>
+                        
+        </div>
+
+									
+									<div class="actions">
+																					<button type="button" title="Đặt mua" class="button btn-cart" onclick="setLocation('http://localhost/watchshop/elizabeth-knit-top-642.html?___SID=U')"><span><span>Đặt mua</span></span></button>
+																				
+									</div>
+								</div>
+							</li>					
+											</ul>
+													<script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+		
+	</div>

@@ -1,0 +1,78 @@
+﻿"--Please Select--","--Vui lòng chọn--"
+
+"API Login ID","Mã đăng nhập API"
+
+"Accepted Currency","Tiền tệ"
+
+"Authorize.net Direct Post","Quản lý bài đăng trên Authorize.net"
+
+"Card Verification Number","Số xác minh thẻ"
+
+"Card Verification Number Visual Reference","Số Thẻ xác nhận trực quan tham chiếu"
+
+"Close","Đóng"
+
+"Credit Card Information","Thông tin thẻ tín dụng"
+
+"Credit Card Number","Số thẻ tín dụng"
+
+"Credit Card Type","Loại thẻ tín dụng"
+
+"Credit Card Types","Các loại thẻ tín dụng"
+"Credit Card Verification","Mã xác nhận thẻ tín dụng"
+
+"Debug","Sửa lỗi"
+
+"Email Customer","Email của khách hàng"
+
+"Enabled","Kích hoạt"
+
+"Expiration Date","Ngày hết hạn"
+
+"Gateway URL","Cổng URL"
+
+"Maximum Order Total","Tổng số hóa đơn lớn nhất"
+
+"Merchant MD5"," Thương mại MD5"
+
+"Merchant's Email","Thương mại Email"
+
+"Minimum Order Total","Tổng số đơn hàng tối thiểu"
+
+"New Order Status"," Tình trạng đơn hàng mới"
+
+"Order saving error: %s","Lỗi lưu đơn hàng: %s"
+
+"Payment Action","Hoạt động thanh toán"
+
+"Payment authorization error.","Lỗi uỷ quyền thanh toán."
+
+"Payment authorization error. Transacion id is empty.","Lỗi cấp phép thanh toán. Id giao dịch rỗng."
+
+"Payment error. Order was not found.","Lỗi thanh toán. Không tìm thấy đơn hàng."
+
+"Payment error. Paid amount doesn\'t match the order amount.","Lỗi thanh toán. Số tiền thanh toán không khớp với số tiền đơn đặt hàng."
+
+"Payment from Applicable Countries","Khu vực áp dụng thanh toán"
+
+"Payment from Specific Countries","Khu vực thành toán riêng"
+
+"Please, choose payment methrieengVui lòng, chon phương thức thanh toán"
+
+"Response hash validation failed. Transaction declined.","Xác nhận bảng băm thất bại. Giao dịch bị từ chối."
+
+"Sort Order","Xếp theo đơn hàng"
+
+"Test Mode","Phương thức kiểm tra"
+
+"The order has been created.","Đơn hàng đã được tạo."
+
+"There was an error processing your order. Please contact us or try again later.","Có lỗi khi xử lý đơn hàng của bạn. Hãy liên hệ với chúng tôi hoặc thử lại sau."
+
+"Title","Tiêu đề"
+
+"Transaction Key","Giao dịch chính"
+
+"What is this?","Đây là gì?"
+
+"You will be required to enter your payment details before you place an order.","Bạn sẽ được yêu cầu nhập chi tiết thanh toán của bạn trước khi bạn đặt hàng."

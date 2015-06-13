@@ -1,0 +1,21 @@
+﻿"An error occurred while clearing the external full page cache.","Đã xảy ra lỗi khi xóa toàn bộ bộ nhớ đệm  trang bên ngoài."
+
+"Cookie Lifetime (seconds)","Thời gian sống của Cookie (giây)"
+
+"Enable External Cache","Kích hoạt bộ nhớ đệm bên ngoài"
+
+"External Cache Control","Kiểm soát mở rộng bộ nhớ đệm"
+
+"External Full Page Cache Settings","Cài đặt mở rộng bộ nhớ đệm"
+
+"External full page cache.","Mở rộng bộ nhớ đệm."
+
+"Failed to load external cache control","Không kiểm soát được phần mở rộng của bộ nhớ đệm"
+
+"Flush External Page Cache","Làm sạch bộ nhớ đệm"
+
+"If empty, default value will be used.","Nếu trống, giá trị mặc định sẽ được sử dụng."
+
+"The external full page cache has been cleaned.","Bộ nhớ đệm đã được làm sạch."
+
+"Zend Full Page Cache","Bộ nhớ đệm của Zend"

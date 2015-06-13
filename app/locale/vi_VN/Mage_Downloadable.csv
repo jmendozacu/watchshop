@@ -1,0 +1,172 @@
+﻿"Add","Thêm"
+
+"Add New Row"," Thêm hàng"
+
+"Add links and samples to downloadable product","Thêm liên kết và tải về các sản phẩm mẫu"
+
+"Alphanumeric, dash and underscore characters are recommended for filenames. Improper characters are replaced with \'_\'.","Ký tự chữ và số, dấu gạch ngang và dấu gạch dưới được đề nghị cho tên tập tin. Ký tự không đúng được thay thế bằng \'_\'."
+
+"An error occurred while getting requested content. Please contact the store owner.","Đã xảy ra lỗi trong khi nhận yêu cầu nội dung. Hãy liên hệ với chủ cửa hàng."
+
+"An error occurred while getting the requested content.","Đã xảy ra lỗi trong khi nhận được các nội dung yêu cầu."
+
+"An error occurred while getting the requested content. Please contact the store owner.","Đã xảy ra lỗi trong khi nhận được các nội dung yêu cầu. Hãy liên hệ với chủ cửa hàng."
+
+"An error occurred while saving the file(s).","Đã xảy ra lỗi khi lưu các tập tin."
+
+"Availability:","Sẵn sàng:"
+
+"Back","Quay lại"
+
+"Canceled","Hủy bỏ"
+
+"Cannot connect to remote host, error: %s.","Không thể kết nối với máy chủ từ xa, lỗi: %s."
+
+"Catalog Product View (Downloadable)","Xem danh mục sản phẩm (Tải về)"
+
+"Category API","Loại API"
+
+"Customer My Account Downloadable Items","Tài khoản của khách hàng đã tải về các mặt hàng"
+
+"Date","Ngày"
+
+"Default Link Title","Tiêu đề liên kết"
+
+"Default Maximum Number of Downloads","Mặc định số lần tải về tối đa"
+
+"Default Sample Title","Mặt định tiêu đề đơn giản"
+
+"Delete","Xóa"
+
+"Disable Guest Checkout if Cart Contains Downloadable Items","Vô hiệu hóa thanh toán khách hàng khi có mục tải về"
+
+"Downloadable Information","Thông tin tải về"
+
+"Downloadable Product"," Sản phẩm tải về"
+
+"Downloadable Product Options"," Tùy chọn sản phẩm tải về"
+
+"Downloadable product Section"," Mục sản phẩm tải về"
+
+"Edit","Chỉnh sửa"
+
+"Edit item parameters","Chỉnh sửa mặt hàng"
+
+"Excl. Tax","Không bao gồm thuế Thuế"
+
+"File","Tập tin"
+
+"From:"," Từ:"
+
+"Gift Message"," Tin nhắn quà tặng"
+
+"Go to <a href=""%s"">My Downloadable Products</a>","Đến <a href=""%s"">Sản phẩm đã tải về của tôi </a>"
+
+"Guest checkout will only work with shareable.","Khách hàng có thể thanh toán nhiều lần."
+
+"In stock","Còn hàng"
+
+"Incl. Tax","Bao gồm thuế"
+
+"Invalid download URL host.","ULR máy chủ không hợp lệ."
+
+"Invalid download URL scheme.","ULR chương trình tải về không hợp lệ."
+
+"Invalid download link type.","Liên kết tải về không hợp lệ."
+
+"Invoiced","Hóa đơn"
+
+"Links can be purchased separately"," Liên kết mua hàng riêng lẻ"
+
+"List","Danh sách"
+
+"Max. Downloads"," Tải về đầy đủ"
+
+"Message:","Tin nhắn"
+
+"Move to Wishlist","Chuyển đến mục yêu thích"
+"My Downloadable Products","Sản phẩm của tôi tải về"
+
+"Open Links in New Window","Mở liên kết trong cửa sổ mới"
+
+"Order #","Đặt hàng #"
+
+"Order Item Status to Enable Downloads","Tình trạng đặt hàng cho phép"
+
+"Order id cannot be null","Mã đơn hàng không được được để trống"
+
+"Order item id cannot be null","Mã đơn hàng không thể để trống"
+
+"Ordered","Đặt hàng"
+
+"Out of stock","Hết hàng"
+
+"Pending","Chờ"
+
+"Please log in to download your product or purchase <a href=""%s"">%s</a>.","Chưa giải quyết Vui lòng đăng nhập để tải về sản phẩm hoặc mua hàng"
+"Price","Giá"
+
+"Product downloadable links","Liên kết sản phẩm tải về"
+
+"Qty","Số lượng"
+
+"Refunded","Hoàn trả"
+
+"Remaining Downloads","Remaining Downloads"
+
+"Remove","Xóa"
+
+"Remove Item","Xóa"
+
+"Remove links and samples from downloadable product","Hủy bỏ liên kết và các mẫu từ sản phẩm tải về"
+
+"Requested link does not exist."," Liên kết yêu cầu không tồn tại."
+
+"Retrieve links and samples list from downloadable product","Lấy liên kết và danh sách từ sản phẩm tải về"
+
+"Sample","Sample"
+"See price before order confirmation.","Xem giá trước khi xác nhận đơn hàng."
+
+"Shareable","Chia sẻ"
+
+"Shipped","Vận chuyển"
+
+"Sort Order","Sắp xếp đơn hàng"
+
+"Start Download"," Bắt đầu tải về"
+
+"Status"," Tình trạng"
+
+"The file does not exist.","Tập tin không tồn tại."
+
+"The link has expired.","Liên kết đã hết hạn."
+
+"The link is not available.","Các liên kết là không có sẵn."
+
+"There are files that were selected but not uploaded yet. Please upload or remove them first","Có những tập tin đã được chọn nhưng không tải lên. Trước tiên hãy tải lên hoặc loại bỏ chúng"
+
+"Title"," Tiêu đề"
+
+"To:","Đến:"
+
+"U","U"
+
+"Unlimited","Không giới hạn"
+
+"Use Content-Disposition"," Bố trí nội dung"
+
+"Use Default Value"," Giá trị mặc định"
+
+"View Order","Xem đơn hàng"
+
+"What's this?","Đây là gì?"
+
+"You have not purchased any downloadable products yet.","Bạn có thể tải về bất kì sản phẩm nào chưa mua."
+
+"attachment","Tập tin đính kèm"
+
+"download"," Tải về"
+
+"inline","Dòng"
+
+"sample","Hàng mẫu"

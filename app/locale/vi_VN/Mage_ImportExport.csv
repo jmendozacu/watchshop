@@ -1,0 +1,124 @@
+﻿" in rows: "," trong hàng: "
+
+"-- Please Select --","-- Vui lòng chọn --"
+
+"Adapter must be an instance of Mage_ImportExport_Model_Import_Adapter_Abstract","Bộ chuyển đổi của Mage_ImportExport_Model_Import_Adapter_Abstract"
+
+"Adapter type must be a non empty string","Bộ chuyển đổi phải là một chuỗi trống"
+
+"Can not determine attribute filter type","Không thể xác định loại thuộc tính bộ lọc"
+
+"Can not find required columns: ","Không thể tìm thấy các cột yêu cầu: "
+
+"Can not get autoincrement value","Không thể tạo giá trị tự động tăng"
+
+"Check Data","Kiểm tra dữ liệu"
+
+"Column names have duplicates","Tên cột có bản sao"
+
+"Column names is empty or is not an array","Tên cột rỗng hoặc không phải là một mảng"
+
+"Column names: ""%s"" are invalid","Tên cột: ""%s"" là không hợp lệ"
+
+"Continue","Tiếp tục"
+
+"Data is invalid or file is not uploaded","Dữ liệu không hợp lệ hoặc tập tin không được tải lên"
+
+"Destination directory is not writable","Thư mục đích không thể ghi"
+
+"Destination file is not writable"," Thư mục tập tin không thể ghi"
+
+"Destination file path must be a string","Đường dẫn tập tin đích phải là một chuỗi "
+
+"Entity Attributes","Các thuộc tính thực thể"
+
+"Entity adapter object must be an instance of Mage_ImportExport_Model_Import_Entity_Abstract","Bộ chuyển đổi đối tượng thực thể của Mage_ImportExport_Model_Import_Entity_Abstract"
+
+"Entity is unknown","Không biết thực thể"
+
+"Entity type model must be an instance of Mage_ImportExport_Model_Export_Entity_Product_Type_Abstract","Loại mô hình thực thể phải là một thể hiện của Mage_ImportExport_Model_Export_Entity_Product_Type_Abstract"
+
+"Entity type model must be an instance of Mage_ImportExport_Model_Import_Entity_Product_Type_Abstract","Loại thực thể mô hình phải là một thể hiện của Mage_ImportExport_Model_Import_Entity_Product_Type_Abstract"
+
+"Error in data structure: behaviors are mixed","Lỗi trong cấu trúc dữ liệu: hành vi này đã bị lẫn lộn"
+
+"Error in data structure: entity codes are mixed","Lỗi trong cấu trúc dữ liệu: mã số thực thể đã được trộn lẫn"
+
+"Export","Truy xuất"
+
+"ExporxuaatsQ","Truy xuất FAQ"
+
+"FAQ","Hỏi đáp"
+
+"File does not contain data. Please upload another one","File không chứa dữ liệu. Hãy tải lên file khác"
+
+"File format is unknown","Định dạng tập tin không rõ"
+
+"File is partially valid, but import is not possible","Tập tin này chỉ là một phần nhỏ, không thể phục hồi"
+
+"File is totally invalid. Please fix errors and re-upload file","Tập tin là hoàn toàn không hợp lệ. Xin hãy sửa lỗi và tải lại"
+
+"File is valid! To start import process press ""Import"" button","Tập tin là hợp lệ! Để bắt đầu quá trình nhập phục hồi nút "" Import """
+
+"File is valid, but import is not possible","Tập tin này hợp lệ, nhưng nhập khẩu là không đúng"
+
+"Header column names already set","Tên tiêu đề đã được thiết lập"
+
+"Import","Phục hồi"
+
+"Import / Export FAQ (Frequently Asked Questions)","Truy xuất/ cập nhật FAQ (Câu hỏi thường gặp)"
+
+"Import FAQ"," Cập nhật FAQ"
+"Import successfully done.","Cập nhật thành công."
+
+"Import/Export","Truy xuất/ Cập nhật"
+
+"In/Out"," Nhập/ Xuất"
+
+"Input entity code is not equal to entity adapter code","Mã đầu vào không bằng mã chuyển đổi"
+
+"Invalid entity","Thực thể không hợp lệ"
+
+"Invalid file format","Định dạng tập tin không hợp lệ"
+
+"Invalid parameters","Thông số không hợp lệ"
+
+"Invalid seek position","Vị trí không hợp lệ"
+
+"Invalid value for '%s'"," Giá trị không hợp lệ '%s'"
+
+"No filter data provided","Không có dữ liệu"
+
+"No source specified","Không có nguồn quy định"
+
+"No valid data sent","Dữ liệu đã gửi không hợp lệ"
+
+"No writer specified"," Không xác định được tác giả"
+
+"Node does not has model token tag","Không tìm thấy từ khóa"
+
+"Not implemented yet","Chưa thực hiện"
+
+"Please fix errors and re-upload file","Hãy sửa lỗi và tải lại"
+
+"Please fix errors and re-upload file or simply press ""Import"" button to skip rows with errors","Vui lòng sửa lỗi và tải lại hoặc nhấn nút ""Import"" để bỏ qua các hàng có lỗi "
+
+"Some other FAQ","Một số câu hỏi thường gặp khác"
+
+"Source file moving failed","Thất bại khi di chuyển tập tin nguồn "
+
+"Source file path must be a string","Đường dẫn tập tin nguồn phải là một chuỗi"
+
+"Source is not set","Mã nguồn không được thiết lập"
+
+"Status","Tình trạng"
+
+"System busy"," Hệ thống bận"
+
+"There are no product types available for export","Không có sản phẩm để truy xuất"
+
+"Total size of uploadable files must not exceed %s","Tổng kích thước của các tập tin tải lên không được vượt quá %s"
+
+"Uploaded file has no extension","Tập tin tải lên không có phần mở rộng"
+
+"Validation Results","Kết quả xác nhận"

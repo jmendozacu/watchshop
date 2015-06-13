@@ -1,0 +1,88 @@
+﻿"%s Index process is working now. Please try run this process later.","%s Tiến trình chỉ mục hiện đang làm việc . Vui lòng thử chạy quá trình này sau."
+
+"%s index was rebuilt.","%s Chỉ mục được xây dựng lại."
+
+"'%s' Index Process Information","'%s'Thông tin tiến trình"
+
+"Action","Hoạt động"
+
+"Cannot initialize the indexer process.","Không thể khởi tạo quá trình."
+
+"Change Index Mode","Thay đổi chế độ chỉ mục"
+
+"Click here to go to <a href=""%s"">Cache Management</a> and refresh cache types.","Nhấn vào đây để đi đến <a href=""%s"">Quản lý bộ nhớ đệm</a> và làm mới các loại bộ nhớ đệm."
+
+"Click here to go to <a href=""%s"">Index Management</a> and rebuild required indexes.","Nhấn vào đây để đi đến <a href=""%s"">Quản lý chỉ mục</a> và xây dựng lại các chỉ số cần thiết."
+
+"Description","Mô tả"
+
+"Disable","Vô hiệu hoá"
+
+"Enable","Kích hoạt"
+
+"General","Chung"
+
+"Index"," Chỉ mục"
+
+"Index Description","Mô tả mục lục"
+
+"Index Management"," Quản lý mục lục"
+
+"Index Mode"," Dạng mục lục"
+
+"Index Name"," Tên Mục lục"
+
+"Index mode","Dạng mục lục"
+
+"Indexer code is not defined.","Mục lục không được định nghĩa."
+
+"Indexer model is not defined.","Mục lục không được định nghĩa."
+
+"Indexer model should extend Mage_Index_Model_Indexer_Abstract.","Mở rộng mục lục Mage_Index_Model_Indexer_Abstract."
+
+"Manual Update","Cập nhật thủ công"
+
+"Mode","Phương thức"
+
+"Never"," Không bao giờ"
+
+"No"," Không"
+
+"One or more of the Indexes are not up to date:","Một hoặc nhiều mục không được cập nhật:"
+
+"Please select Index(es)","Vui lòng chọn danh mục"
+
+"Please select Indexes","Vui lòng chọn danh mục"
+
+"Process Information","Thông tin tiến trình"
+
+"Processing","Tiến trình"
+
+"Ready","Sẳn sàng"
+
+"Refresh"," Làm mới"
+
+"Reindex Data","Chỉ mục lại dữ liệu"
+
+"Reindex Required","Danh mục bắt buộc"
+
+"Status"," Tình trạng"
+
+"System"," Hệ thống"
+
+"The index has been saved.","Danh mục đã được lưu."
+
+"There was a problem with reindexing process.","Có một vấn đề với quá trình tái lập danh mục dữ liệu."
+
+"There was a problem with saving process.","Có một vấn đề với quá trình lưu."
+
+"Total of %d index(es) have changed index mode.","Tổng số %d chỉ số đã được thay đổi."
+
+"Total of %d index(es) have reindexed data.","Tổng số %d chỉ mục đã được tái lập danh mục dữ liệu."
+
+"Update Required","Bắt buộc cập nhật"
+
+"Update on Save"," Lưu cập nhật"
+
+"Updated At"," Cập nhật vào"
+"Yes"," Có"

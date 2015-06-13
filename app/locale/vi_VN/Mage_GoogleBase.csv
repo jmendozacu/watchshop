@@ -1,0 +1,155 @@
+"Active","Hoạt động"
+
+"Add Attribute Mapping","Thêm thuộc tính bản đồ? "
+
+"Add New Attribute","Thêm thuộc tính mới"
+
+"Add to Google Base","Thêm vào Google Base"
+
+"Are you sure?","Bạn có chắc không?"
+
+"Attrtinhse","Thuộc tính"
+
+"Attribute Set","Thiết lập thuộc tính"
+
+"Attribute Set and Item Type","Thiết lập thuộc tính và loại hàng"
+
+"Attributes","Thuộ tính"
+
+"Attributes Mapping"," Thuộc tính"
+
+"Attributes Set"," Thiết lập thuộc tính"
+
+"AuthSub","Xác thực"
+
+"Available Products","Sản phẩm có sẵn"
+
+"Base Currency should be set to %s for %s in system configuration. Otherwise item prices won't be correct in Google Base.","Cơ sở tiền tệ nên được thiết lập %s trong %s cấu hình hệ thống. Nếu danh mục giá không chính xác trong Google Base."
+
+"Cannot update Google Base Item for Store '%s'","Không thể cập nhật mục Google Base cho cửa hàng '%s'"
+
+"Captcha confirmation error: %s","Lỗi xác nhận Captcha: %s"
+
+"Captcha has been confirmed.","Mã? xác nhận đã được xác nhận."
+
+"Catalog","Danh mục"
+
+"Clicks","Nhấp chuột"
+
+"ClientLogin","Đăng nhập vào máy khách"
+
+"Confirm","Xác nhận"
+
+"Current Mapping will be reloaded. Continue?","Bản đồ hiện tại sẽ được tải lại. Tiếp tục?"
+
+"Custom attribute, no mapping","Tùy chỉnh thuộc tính"
+
+"Delete"," Xóa"
+
+"Delete Mapping","Xóa"
+
+"Edit Item Type","Chỉnh sửa mặt hàng"
+
+"Edit Item Type ""%s""","Chỉnh sửa mặt hàng ""%s"""
+
+"Error: %s","Lỗi: %s"
+
+"Expires","Hết hạn"
+
+"Google","Google"
+
+"Google Base","Google cơ sở"
+
+"Google Base Attribute"," Thuộc tính của Google Base"
+
+"Google Base ID"," Mã Google Base "
+
+"Google Base Item Type","Loại mặt hàng"
+
+"Google Base Item type","Google Base Item type"
+
+"Google Base Items"," Mặt hàng Google Base"
+
+"Google base","Google base"
+
+"Hide","Ẩn"
+
+"Hosted","Máy chủ"
+
+"Hosted or Google","Máy chủ hoặc Google"
+
+"Impr.","Hiển thị."
+
+"Invalid Product Model for Google Base Item","Mô hình sản phẩm không hợp lý cho mục Google Base"
+
+"Item Type was deleted","Mục này đã bị xóa"
+
+"Item Types"," Loại hàng"
+
+"Item model is not specified to delete Google Base entry.","Mặt hàng mẫu không được xóa trong Google Base."
+
+"Items"," Mặt hàng"
+
+"Manage Attribute Mapping","Quản lý biểu đồ thuộc tính"
+
+"Manage Attributes","Quản lý thuộc tính"
+
+"Manage Items","Quản lý thuộc tính"
+
+"New Item Type"," Loại hàng mới"
+
+"New ItemType"," Loại hàng mới"
+
+"No","Không"
+
+"No items were deleted from Google Base","Không có mục nào đã được xóa từ Google Base"
+
+"No items were published","Không có sản phẩm nào được đăng"
+
+"No items were saved as inactive items","Không có sản phẩm nào được lưu lại dưới dạng các mặt hàng không hoạt động"
+
+"No products were added to Google Base","Không có sản phẩm được thêm vào Google Base"
+
+"Object model is not specified to save Google Base entry.","Các đối tượng không được chỉ định để lưu vào Google Base."
+
+"Please, select Attribute Set and Google Item Type to load attributes","Vui lòng chọn thiết lập thuộc tính và loại hàng để tải lên thuộc tính"
+
+"Product Name"," Tên sản phẩm"
+
+"Publish","Công khai"
+
+"Published","Công khai"
+
+"Remove"," Xóa"
+
+"Save Mapping"," Lưu"
+
+"Session expired during export. Please revise exported products and repeat the process if necessary.","Phiên làm việc đã hết hạn. Vui lòng xem lại các sản phẩm đã truy xuất và lặp lại quá trình này nếu cần thiết."
+
+"Synchronize","Đồng bộ hóa"
+
+"Target Country"," Quốc gia"
+
+"The item type has been saved.","Mặt hàng đã được lưu."
+
+"This action will update items statistics and remove the items which are not available in Google Base. Continue?","Hành động này sẽ thống kê cập nhật các mặt hàng và loại bỏ các mục mà không có sẵn trong Google Base. Tiếp tục?"
+
+"Total of %d items(s) have been deleted; total of %d items(s) have been updated."," Đã xóa các mặt hàng %d; Mặt hàng %d đã được cập nhật."
+
+"Total of %d items(s) have been published.","Mặt hàng %d đã được thêm."
+
+"Total of %d items(s) have been removed from Google Base."," Mặt hàng %d đã được xóa từ Google Base."
+
+"Total of %d items(s) have been saved as inactive items.","Mặt hàng %d đã được lưu thành mặt hàng thụ động."
+
+"Total of %d product(s) have been added to Google Base."," Mặt hàng %d đã được thêm vào Google Base."
+
+"Unable to connect to Google Base. Please, check Account settings in configuration.","Không thể kết nối với Google Base. Xin vui lòng kiểm tra các thiết lập tài khoản trong cấu hình."
+
+"Unable to select a Store View.","Không thể xem cửa hàng."
+
+"View Available Products","Xem Sản phẩm"
+
+"View Item in Google Base","Xem mặt hàng trong Google Base"
+
+"Yes"," Đồng ý ?"

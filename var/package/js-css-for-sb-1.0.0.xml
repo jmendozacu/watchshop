@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+    <name>js-css-for-sb</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://rajeev-k-tomy.blogspot.in/">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>A Magento Extension that will allow to add javascript and css for static blocks. </summary>
+    <description>&lt;h2&gt;INTRODUCTION&lt;/h2&gt;&#xD;
+&#xD;
+A Magento Extension that will allow to add javascript and css for static blocks. This extension makes static blocks somewhat &amp;quot;dynamic&amp;quot;. For every static block, there will be provision to add javascript and CSS to that particular static block. Whenever static blocks with js and css are rendered in frontend, these properties will get applied to that static blocks&#xD;
+&#xD;
+&lt;h2&gt;COMPATIBILITY&lt;/h2&gt;&#xD;
+&#xD;
+Currently this extension supports Magento 1.8,1.8.1,1.9&#xD;
+&#xD;
+&#xD;
+&lt;h2&gt;NOTES&lt;/h2&gt;&#xD;
+&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Don't put script or style tags inside the text areas. The extension will autogenerate this enclosure html tags.&lt;/li&gt;&#xD;
+&lt;li&gt;You can put javascirpt and css directly inside text areas&#xD;
+Don't put html contents inside the text area&lt;/li&gt;&#xD;
+&lt;li&gt;You can put jquery in text area. In this case, it is your job to make sure that, necessary jquery files are added.&lt;/li&gt;&#xD;
+&lt;li&gt;By default, all the script that are related to static blocks are get included in the bottom side of the page and css files are included in head part (bottom side).&lt;/li&gt;&lt;/ul&gt;</description>
+    <notes>This is first stable release of the extension. This is well tested in all new magento releases.</notes>
+    <authors><author><name>Rajeev K Tomy</name><user>Rajeev_KT</user><email>rajeevphpdeveloper@gmail.com</email></author></authors>
+    <date>2014-08-21</date>
+    <time>12:05:53</time>
+    <contents><target name="magecommunity"><dir name="Rkt"><dir name="JsCssforSb"><dir name="Block"><file name="Jscss.php" hash="53acaed81b34be203c8207bde6f31369"/></dir><dir name="Helper"><file name="Data.php" hash="be0fd17363bbcc8e72af264a19c17da5"/><file name="Data.php~" hash="d5850d5e99867bfbd0fe92c1da0bbea0"/></dir><dir name="Model"><file name="Block.php" hash="df72873f83fe52d19f4ec634ab1f7cf8"/><file name="JsCss.php" hash="f138ee0345cd14b8542e56595a641b6e"/><file name="Observer.php" hash="2c144bc1c6785d8152a42e205334bd10"/><dir name="Resource"><dir name="JsCss"><file name="Collection.php" hash="63381048f23f6b2d555a7302f9f8be55"/></dir><file name="JsCss.php" hash="1387928530281587eb04469135c3c4bc"/><file name="Setup.php" hash="fc79061b804cd01529773cad5c939022"/></dir></dir><dir name="etc"><file name="config.xml" hash="ee1d777fe5aad300f1e839cf43e449de"/></dir><dir name="sql"><dir name="rkt_jscssforsb_setup"><file name="install-1.0.0.php" hash="e3cd316717a2a4a2e93580c2b5747164"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><file name="rkt_jscssforsb" hash="d41d8cd98f00b204e9800998ecf8427e"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Rkt_JsCssforSb.xml" hash="b67f5083c0ee056b38cad9bde3b6a8ec"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

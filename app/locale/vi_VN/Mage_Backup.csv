@@ -1,0 +1,96 @@
+﻿"Action","Hoạt động"
+
+"An error occurred while creating the backup.","Có lỗi xảy ra trong khi tạo tập tin sao lưu."
+
+"An error occurred while writing to the backup file ""%s"".","Đã xảy ra lỗi trong khi ghi tập tin sao lưu ""%s""."
+
+"Are you sure you want to delete the selected backup(s)?","Bạn có chắc chắn muốn xóa các bản sao lưu được chọn?"
+
+"Backup Type","Loại sao lưu"
+
+"Backup file ""%s"" cannot be read from or written to.","Sao lưu tập tin ""%s"" không thể đọc hoặc ghi vào."
+
+"Backup file ""%s"" does not exist.","Tập tin sao lưu ""%s"" không tồn tại."
+
+"Backup file does not exist.","Sao lưu tập tin không tồn tại."
+
+"Backup file handler was unspecified.","Sao lưu tập tin xử lý là không xác định."
+
+"Backup file not found","Không tìm thấy tập tin sao lưu"
+
+"Backup file path was not specified.","Đường dẫn tập tin sao lưu được không xác định."
+
+"Backups","Sao lưu"
+
+"Cannot read backup file.","Không thể đọc tập tin sao lưu."
+
+"Create Backup","Tạo tập tin sao lưu"
+
+"Database Backup","Sao lưu cơ sở dữ liệu"
+
+"Database and Media Backup","Sao lưu cơ sở dữ liệu và các phương tiện truyền thông"
+
+"Database was successfuly backed up.","Sao lưu cơ sở dữ liệu thành công."
+
+"Download"," Tải về"
+
+"Enable Scheduled Backup","Kích hoạt tính năng sao lưu theo lịch trình"
+
+"Failed to connect to FTP","Không thể kết nối tới FTP"
+"Failed to delete one or several backups.","Không thể xóa một hoặc nhiều bản sao lưu."
+
+"Failed to rollback","Không thể quay lại"
+
+"Failed to validate FTP","Không xác nhận FTP"
+
+"Frequency","Tần suất"
+
+"Invalid Password.","Mật khẩu không hợp lệ."
+
+"Maintenance Mode","Chế độ bảo trì"
+
+"Not enough free space to create backup.","Không đủ bộ nhớ để tạo bản sao lưu."
+
+"Not enough permissions to create backup.","Không đủ quyền để tạo bản sao lưu."
+
+"Not enough permissions to perform rollback","Không đủ quyền để thực hiện rollback"
+
+"Please deselect the sufficient check-box, if you want to continue backup's creation","Hãy bỏ chọn check-box, nếu bạn muốn tiếp tục tạo ra bản sao lưu"
+
+"Please deselect the sufficient check-box, if you want to continue rollback processing","Hãy bỏ chọn check-box, nếu bạn muốn tiếp tục xử lý rollback"
+
+"Put store on the maintenance mode while backup's creation","Đặt cửa hàng vào chế độ bảo trì trong khi tạo backup của"
+
+"Rollback","Quay lại"
+
+"Scheduled Backup Settings","Cài đặt lịch trình sao lưu"
+
+"Size, Bytes","Kích thước, Byte"
+
+"Start Time","Thời gian bắt đầu"
+
+"System Backup","Sao lưu hệ thống"
+
+"System couldn't put store on the maintenance mode","Hệ thống không thể đưa cửa hàng về chế độ bảo trì"
+
+"The database and media backup has been created.","Các cơ sở dữ liệu và các phương tiện sao lưu đã được tạo."
+
+"The database backup has been created.","Cơ sở dữ liệu sao lưu đã được tạo."
+
+"The file was compressed with Zlib, but this extension is not installed on server.","Các tập tin được nén với Zlib, nhưng phần mở rộng này không được cài đặt trên máy chủ."
+
+"The selected backup(s) has been deleted.","Các sao lưu được chọn đã bị xóa."
+
+"The system backup has been created.","Hệ thống sao lưu đã được tạo ra."
+
+"Time","Thời gian"
+
+"Type"," Loại"
+
+"Unable to create backup. Please, try again later.","Không thể tạo bản sao lưu. Xin vui lòng thử lại sau."
+
+"Unable to save the cron expression.","Không thể lưu các thể hiện định kỳ."
+
+"Warning! System couldn't put store on the maintenance mode.","Cảnh báo! Hệ thống không thể đặt cửa hàng về chế độ bảo trì."
+
+"Wrong order of creation for new backup.","Lỗi không thể tạo bản sao lưu mới."
