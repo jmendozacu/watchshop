@@ -1,0 +1,51 @@
+<div class="nav-container">
+	<div class="container-fluid">		
+			<ul id="nav">
+				<li  class="level0 nav-1 first active level-top parent"><a href="http://localhost/watchshop/thuong-hieu.html?___SID=U"  class="level-top" ><span>Thương hiệu</span></a><ul class="level0"><li  class="level1 nav-1-1 first parent"><a href="http://localhost/watchshop/thuong-hieu/tissot.html?___SID=U" ><span>TISSOT</span></a><ul class="level1"><li  class="level2 nav-1-1-1 first"><a href="http://localhost/watchshop/thuong-hieu/tissot/classic.html?___SID=U" ><span>CLASSIC</span></a></li><li  class="level2 nav-1-1-2"><a href="http://localhost/watchshop/thuong-hieu/tissot/sport.html?___SID=U" ><span>SPORT</span></a></li><li  class="level2 nav-1-1-3"><a href="http://localhost/watchshop/thuong-hieu/tissot/trend.html?___SID=U" ><span>TREND</span></a></li><li  class="level2 nav-1-1-4 last"><a href="http://localhost/watchshop/thuong-hieu/tissot/d-ng-h-doi.html?___SID=U" ><span>ĐỒNG HỒ ĐÔI </span></a></li></ul></li><li  class="level1 nav-1-2"><a href="http://localhost/watchshop/thuong-hieu/candino.html?___SID=U" ><span>CANDINO</span></a></li><li  class="level1 nav-1-3"><a href="http://localhost/watchshop/thuong-hieu/ogival.html?___SID=U" ><span>OGIVAL</span></a></li><li  class="level1 nav-1-4"><a href="http://localhost/watchshop/thuong-hieu/seiko.html?___SID=U" ><span>SEIKO</span></a></li><li  class="level1 nav-1-5"><a href="http://localhost/watchshop/thuong-hieu/citizen.html?___SID=U" ><span>CITIZEN</span></a></li><li  class="level1 nav-1-6 last"><a href="http://localhost/watchshop/thuong-hieu/orient.html?___SID=U" ><span>ORIENT</span></a></li></ul></li><li  class="level0 nav-2 level-top"><a href="http://localhost/watchshop/dong-san-pham.html?___SID=U"  class="level-top" ><span>Dòng sản phẩm</span></a></li><li  class="level0 nav-3 level-top"><a href="http://localhost/watchshop/muc-gia.html?___SID=U"  class="level-top" ><span>Mức giá</span></a></li><li  class="level0 nav-4 level-top"><a href="http://localhost/watchshop/dong-ho-nam.html?___SID=U"  class="level-top" ><span>Đồng hồ nam</span></a></li><li  class="level0 nav-5 level-top"><a href="http://localhost/watchshop/dong-ho-nu.html?___SID=U"  class="level-top" ><span>Đồng hồ nữ</span></a></li><li  class="level0 nav-6 level-top"><a href="http://localhost/watchshop/dong-ho-doi.html?___SID=U"  class="level-top" ><span>Đồng hồ đôi</span></a></li><li  class="level0 nav-7 last level-top"><a href="http://localhost/watchshop/khuyen-mai.html?___SID=U"  class="level-top" ><span>Tin khuyến mãi</span></a></li>				
+			</ul>		
+   </div>
+</div>
+	<div class="mobMenu">
+		<div class="container">			
+					<h1>
+						<span>Menu</span>
+							<a class="menuBox highlight btn btn-navbar" href="javascript:void(0);"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+					</h1>
+					<div id="menuInnner" style="display:none;">
+						<ul class="accordion">
+							<li  class="level0 nav-1 first active level-top parent"><a href="http://localhost/watchshop/thuong-hieu.html?___SID=U"  class="level-top" ><span>Thương hiệu</span></a><ul class="level0"><li  class="level1 nav-1-1 first parent"><a href="http://localhost/watchshop/thuong-hieu/tissot.html?___SID=U" ><span>TISSOT</span></a><ul class="level1"><li  class="level2 nav-1-1-1 first"><a href="http://localhost/watchshop/thuong-hieu/tissot/classic.html?___SID=U" ><span>CLASSIC</span></a></li><li  class="level2 nav-1-1-2"><a href="http://localhost/watchshop/thuong-hieu/tissot/sport.html?___SID=U" ><span>SPORT</span></a></li><li  class="level2 nav-1-1-3"><a href="http://localhost/watchshop/thuong-hieu/tissot/trend.html?___SID=U" ><span>TREND</span></a></li><li  class="level2 nav-1-1-4 last"><a href="http://localhost/watchshop/thuong-hieu/tissot/d-ng-h-doi.html?___SID=U" ><span>ĐỒNG HỒ ĐÔI </span></a></li></ul></li><li  class="level1 nav-1-2"><a href="http://localhost/watchshop/thuong-hieu/candino.html?___SID=U" ><span>CANDINO</span></a></li><li  class="level1 nav-1-3"><a href="http://localhost/watchshop/thuong-hieu/ogival.html?___SID=U" ><span>OGIVAL</span></a></li><li  class="level1 nav-1-4"><a href="http://localhost/watchshop/thuong-hieu/seiko.html?___SID=U" ><span>SEIKO</span></a></li><li  class="level1 nav-1-5"><a href="http://localhost/watchshop/thuong-hieu/citizen.html?___SID=U" ><span>CITIZEN</span></a></li><li  class="level1 nav-1-6 last"><a href="http://localhost/watchshop/thuong-hieu/orient.html?___SID=U" ><span>ORIENT</span></a></li></ul></li><li  class="level0 nav-2 level-top"><a href="http://localhost/watchshop/dong-san-pham.html?___SID=U"  class="level-top" ><span>Dòng sản phẩm</span></a></li><li  class="level0 nav-3 level-top"><a href="http://localhost/watchshop/muc-gia.html?___SID=U"  class="level-top" ><span>Mức giá</span></a></li><li  class="level0 nav-4 level-top"><a href="http://localhost/watchshop/dong-ho-nam.html?___SID=U"  class="level-top" ><span>Đồng hồ nam</span></a></li><li  class="level0 nav-5 level-top"><a href="http://localhost/watchshop/dong-ho-nu.html?___SID=U"  class="level-top" ><span>Đồng hồ nữ</span></a></li><li  class="level0 nav-6 level-top"><a href="http://localhost/watchshop/dong-ho-doi.html?___SID=U"  class="level-top" ><span>Đồng hồ đôi</span></a></li><li  class="level0 nav-7 last level-top"><a href="http://localhost/watchshop/khuyen-mai.html?___SID=U"  class="level-top" ><span>Tin khuyến mãi</span></a></li>							
+							<span class="clearfix"></span>
+						</ul>
+					</div>				
+		</div>      
+	</div>
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('.menuBox').click(function() {
+		if (jQuery('#menuInnner').is(":hidden"))
+		{
+		jQuery('#menuInnner').slideDown("fast");
+		} else {
+		jQuery('#menuInnner').slideUp("fast");
+		}
+		return false;
+		});
+		if(jQuery(window).width() < 1000){
+			jQuery('.nav-container').hide();
+			jQuery('.mobMenu').show();
+		}else{
+			jQuery('.nav-container').show();
+			jQuery('.mobMenu').hide();
+			}
+	}); 
+	jQuery(window).resize(function(){
+		if(jQuery(window).width() < 1000){
+			jQuery('.nav-container').hide();
+			jQuery('.mobMenu').show();
+		}else{
+			jQuery('.nav-container').show();
+			jQuery('.mobMenu').hide();
+			}
+		});
+</script>
+
