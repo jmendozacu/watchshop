@@ -44,8 +44,8 @@
             <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
             <input type="hidden" name="related_product" id="related-products-field" value="" />
         </div>
-
-        <div class="product-shop">
+	<div class = "row">
+        <div class="product-shop col-lg-6 col-sm-6 col-xs-12">
             <div class="product-name">
                 <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
             </div>
@@ -89,11 +89,11 @@
 
         </div>
 
-        <div class="product-img-box">
+        <div class="product-img-box col-lg-6 col-sm-6 col-xs-12">
             <?php echo $this->getChildHtml('media') ?>
             <?php echo $_product->getVideo() ?>
         </div>
-
+	</div>
         <div class="clearer"></div>
         <?php if ($_product->isSaleable() && $this->hasOptions()):?>
             <?php echo $this->getChildChildHtml('container2', '', true, true) ?>

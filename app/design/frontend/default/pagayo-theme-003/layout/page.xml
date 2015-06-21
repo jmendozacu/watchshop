@@ -36,9 +36,18 @@ Default layout, loads most of the pages
         <block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
 
             <block type="page/html_head" name="head" as="head">
-                <action method="addJs"><script>prototype/prototype.js</script></action>
+				<action method="addJs"><script>prototype/prototype.js</script></action>
 				<action method="addJs"><script>lib/jquery/jquery-1.10.2.min.js</script></action>
                 <action method="addJs"><script>lib/jquery/noconflict.js</script></action>
+				
+				<action method="addJs"><script>bootstrap/bootstrap.js</script></action>
+				<action method="addJs"><script>bootstrap/jquery.accordion.js</script></action>
+				<action method="addJs"><script>bootstrap/bootstrap-tooltip.js</script></action>
+				<action method="addJs"><script>bootstrap/cloud-zoom.1.0.2.min.js</script></action>
+				<action method="addJs"><script>bootstrap/jquery.jcarousel.min.js</script></action>
+
+
+               
                 <action method="addJs"><script>lib/ccard.js</script></action>
                 <action method="addJs"><script>prototype/validation.js</script></action>
                 <action method="addJs"><script>scriptaculous/builder.js</script></action>
@@ -54,8 +63,9 @@ Default layout, loads most of the pages
 
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 											
-                <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
-				<action method="addCss"><stylesheet>css/mystyles.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/bootstrap.css</stylesheet></action>
+				<action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
+				<action method="addCss"><stylesheet>css/mystyles.css</stylesheet></action>				
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>				

@@ -34,8 +34,8 @@
 	<h2><?php echo $this->__('New Products') ?></h2>
 	<div class="category-products">        
 			<?php echo $this->getPagerHtml() ?>
-			<?php //$_columnCount = 5;
-			$_columnCount = $this->getColumnCount(); ?>
+			<?php $_columnCount = 6; //số lượng sản phẩm show home page
+			//$_columnCount = $this->getColumnCount(); ?>
 			<?php $_collectionSize = $_products->count() ?>
 			<?php $i=0; ?>        
 				<?php foreach ($_products->getItems() as $_product): ?>
@@ -51,25 +51,20 @@
 											</a>
 										</div> 
 								<?php } ?>
-								<?php $_imgSize = 210; ?>
+								<?php $_imgSize = 160; ?>
 								<?php // The image size is locked at 210 for this for display purposes. CSS has it at 75% which should equate to 278px?>
 								<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>" class="product-image">
-									<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(210) ?>" alt="<?php echo $this->stripTags($_product->getName(), null, true) ?>" />
-								</a>
-								<div class="item-review">							
-									<?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>							
-								</div>
-								<div class="item-bottom">
-									<h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>)"><?php echo $this->helper('catalog/output')->productAttribute($_product, $_product->getName() , 'name') ?></a></h3>
-									<?php echo $this->getPriceHtml($_product, true) ?>
-									
+									<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize) ?>" alt="<?php echo $this->stripTags($_product->getName(), null, true) ?>" />
+								</a>	
+								<h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>)"><?php echo $this->helper('catalog/output')->productAttribute($_product, $_product->getName() , 'name') ?></a></h3>
+								<div class="item-bottom">									
+									<?php echo $this->getPriceHtml($_product, true) ?>									
 									<div class="actions">
 										<?php if ($_product->isSaleable()): ?>
 											<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
 										<?php else: ?>
 											<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
-										<?php endif; ?>
-										
+										<?php endif; ?>										
 									</div>
 								</div>
 							</li>					

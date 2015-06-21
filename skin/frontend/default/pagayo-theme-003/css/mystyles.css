@@ -1,5 +1,5 @@
 @CHARSET "ISO-8859-1";
-/* ============================================ *
+ /* ============================================ *
  * Slideshow
  * ============================================ */
 .slideshow-container {
@@ -164,13 +164,14 @@
   opacity: .5;
 }
 
-/* -------------------------------------------- *
- * Promotion Banner Section
- */
-.promos {
-  margin: 0 0 10px 0;
-  padding: 0;
-  width: 100%;
+/* ============================================ *
+ * brands logo
+ * ============================================ */
+body ul.promos{
+	padding-left: 0px;
+	margin: 0 0 10px 0;
+  /* padding: 0; */
+  /* width: 100%; */
 }
 
 .promos:after {
@@ -180,18 +181,25 @@
 }
 
 /* Specifying the body only in order to override the .std ul li styling */
-body .promos > li {
-  margin: 0 0 10px 0;
-  list-style: none;
-  text-align: center;
-  position: relative;
-  border: 1px solid #cccccc;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
+body .promos > li {  
+	list-style: none;
+	text-align: center;
+	position: relative;
+	/* border: 1px solid #cccccc; */
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	float: left; 
+	max-width: 96%;
+	margin: 0 0 10px 0;
+	padding: 0 4px 0 4px;
+  }
+
+ .promos > li:nth-child(6n) {
+    margin-right: 0;
+  }
 
 .promos > li:last-child {
   margin-bottom: 0;
@@ -228,7 +236,6 @@ body .promos > li {
   display: block;
 }
 
-@media only screen and (min-width: 771px) {
   .promos span {
     font-size: 16px;
   }
@@ -236,29 +243,167 @@ body .promos > li {
   .promos strong {
     font-size: 17px;
   }
-
-  /* Config: Six columns + flexible gutter */
-  body .promos > li {
-    float: left;
-    width: 15.2%;
-    margin-right: 1%;
-  }
-
-  .promos > li:nth-child(6n) {
-    margin-right: 0;
-  }
-}
-@media only screen and (min-width: 880px) {
-  .promos span {
-    font-size: 18px;
-  }
-
-  .promos strong {
-    font-size: 24px;
-  }
-}
+  
 
 /* ============================================ *
- * Title Block
+ * Nav
  * ============================================ */
+.mobMenu{
+	width: 96%;
+	padding:5px 0;
+}
+.mobMenu .btn-navbar{ 
+	padding:5px 10px;
+}
+.mobMenu .btn-navbar .icon-bar {
+	background-color: #F5F5F5;
+	border-radius: 1px 1px 1px 1px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	display: block;
+	height: 2px;
+	width: 18px;
+}
+#menuInnner{
+	width:204%;
+	margin-top:9px;
+}
+#menuInnner ul ul li{
+	padding-left:10px;
+}
+.mobMenu #menuInnner li a{
+	padding: 9px 15px;
+	border-radius: 3px 3px 3px 3px; 
+	text-align:left; 
+	text-decoration:none; 
+	display:block; 
+	color:#444340;
+}
+.mobMenu #menuInnner li a:hover{background-color: #FCF2E5; color:#ff1929;}
+#menuInnner li{position:relative;}
+#menuInnner{ width:100%;margin-top:9px;}
+#menuInnner ul ul li{ padding-left:10px;}
+#menuInnner ul ul.level1-menu li{ padding-left:0;}
+em.open-close{position:absolute; right:0;height:37px; top:0; background:url("../images/i_desc_arrow.gif") no-repeat scroll center center transparent; width:12px; cursor:pointer;}
+ 
+ /* ========================================================================================================================================================= *
+ * @media max width 480px (Phones)
+ * ========================================================================================================================================================== */ 
+@media (max-width: 480px){ 
+ }
+ /* ========================================================================================================================================================= *
+ * @media min width 767px
+ * ========================================================================================================================================================== */ 
+ @media (max-width: 767px){
+ /* LAYOUT
+ ========================================*/
+ 
+ /* Header
+ ========================================*/
+.header-top {  
+  padding: 16px 0 0px;
+}
+ .header .header-right { 
+	float: left; 
+}
+ .header .welcome-msg { 
+	text-align: left; 
+	margin-bottom: 4px; 
+	color: #555; 
+	font-style: italic; 
+}
+.header-container .form-search .col-xs-9{	
+	padding-right: 3px;
+}
+.header-container .form-search .col-xs-3{	
+	padding-left: 0px;
+}
+.header-container .quick-access .links {
+	float: left;
+	text-align: left; 
+	margin-top: 7px; 
+	font-size: 13px; 
+}
+.header-container .quick-access .links  li:nth-child(4){
+	border-left: none;	
+}
+
+/* Nav
+ ========================================*/
+ .mobMenu h1{
+	margin-top: 0px;
+}
+/* Brands
+ ========================================*/
+body .promos > li { 
+	max-height: 70%;
+}
+.promos img {
+	height: 60px;
+}
+ } 
+/* ========================================================================================================================================================= *
+ * @media min width 768px and max width 1024px (Tablets )
+ * ========================================================================================================================================================== */ 
+@media (min-width: 768px) and (max-width: 1024px){
+/* LAYOUT
+ ========================================*/
+ 
+/* Header
+ ========================================*/
+ 
+ .header .header-right { 
+	float: left; 
+}
+ .header .welcome-msg { 
+	text-align: left; 
+	margin-bottom: 4px; 
+	color: #555; 
+	font-style: italic; 
+}
+.header-container .form-search .col-sm-9{	
+	padding-right: 3px;
+}
+.header-container .form-search .col-sm-3{	
+	padding-left: 0px;
+}
+.header-container .quick-access .links {
+	float: left;
+	text-align: left; 
+	margin-top: 7px; 
+	font-size: 13px; 
+}
+/* TOP NAVIGATION
+========================================== */
+#nav { 
+	width: 100%;
+	margin: 0 auto;
+	font-size: 14px; 
+}
+}
+
+/* ========================================================================================================================================================= *
+ * @media min width 1200px (Desktops)
+* ========================================================================================================================================================== */ 
+@media (min-width: 1200px){
+/* LAYOUT
+ ========================================*/	
+/* Header
+ ========================================*/
+ .header-container .form-search .col-lg-8{	
+	padding-right: 5px;
+}
+.header-container .form-search .col-lg-3{	
+	padding-left: 0px;
+}
+
+
+}
+
+
+
+
+
+
+
+
  

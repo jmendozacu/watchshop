@@ -16,6 +16,21 @@
             <script>lib/jquery/noconflict.js</script>
          </action>
          <action method="addJs">
+            <script>bootstrap/bootstrap.js</script>
+         </action>
+         <action method="addJs">
+            <script>bootstrap/jquery.accordion.js</script>
+         </action>
+         <action method="addJs">
+            <script>bootstrap/bootstrap-tooltip.js</script>
+         </action>
+         <action method="addJs">
+            <script>bootstrap/cloud-zoom.1.0.2.min.js</script>
+         </action>
+         <action method="addJs">
+            <script>bootstrap/jquery.jcarousel.min.js</script>
+         </action>
+         <action method="addJs">
             <script>lib/ccard.js</script>
          </action>
          <action method="addJs">
@@ -52,6 +67,9 @@
             <script>mage/cookies.js</script>
          </action>
          <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
+         <action method="addCss">
+            <stylesheet>css/bootstrap.css</stylesheet>
+         </action>
          <action method="addCss">
             <stylesheet>css/styles.css</stylesheet>
          </action>

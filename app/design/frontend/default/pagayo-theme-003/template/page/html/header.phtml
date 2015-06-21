@@ -27,52 +27,67 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<?php $headerusp1 = Mage::getModel('cms/block')->load('pt003-header-usp1'); ?>
-<?php $headerusp2 = Mage::getModel('cms/block')->load('pt003-header-usp2'); ?>
-<?php $headerusp3 = Mage::getModel('cms/block')->load('pt003-header-usp3'); ?>
+<?php $headerusp1 = Mage::getModel('cms/block')->load('header-banner'); ?>
+<?php $headerusp2 = Mage::getModel('cms/block')->load('header-line-1'); ?>
+<?php $headerusp3 = Mage::getModel('cms/block')->load('header-line-2'); ?>
+<?php $headerusp4 = Mage::getModel('cms/block')->load('header-line-3'); ?>
 <div class="header-container">
-
-	<div class="header-top">
-    	<div class="header">
-    	    <?php if ($this->getIsHomePage()):?>
-    	    <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-    	    <?php else:?>
-    	    <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-    	    <?php endif?>
-    	    
-    	    <div class="header-usps">
-    	    	<div class="usp1">
-    	    		<div class="headline"><?php echo $headerusp1->getTitle(); ?></div>
-    	    		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt003-header-usp1')->toHtml() ?>
-    	    	</div>
-    	    	<div class="usp2">
-    	    		<div class="headline"><?php echo $headerusp2->getTitle(); ?></div>
-    	    		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt003-header-usp2')->toHtml() ?>
-    	    	</div>
-    	    	<div class="usp3">
-    	    		<div class="headline"><?php echo $headerusp3->getTitle(); ?></div>
-    	    		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt003-header-usp3')->toHtml() ?>
-    	    	</div>
-    	    </div>
-    	    
-    	    <div class="header-right">
-    	    	<?php echo $this->getChildHtml('topContainer'); ?>
-    	    	<?php echo $this->getChildHtml('store_language') ?>
-    	    	<div class="clearer"></div>
-    	    	<div class="welcome-msg">
-    	    		<?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?>
-    	    	</div>
+	<div class="quick-access-container">
+    	<div class="quick-access">
+			<div class = "row">
+				<div class = "col-lg-7 col-sm-12 col-xs-12">
+					<div class ="header-line row">
+						<div class = "col-lg-6 col-sm-6 col-xs-12">
+							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-1')->toHtml() ?>
+						</div>
+						<div class = "col-lg-3 col-sm-3 col-xs-12">
+							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-2')->toHtml() ?>
+						</div>
+						<div class = "col-lg-3 col-sm-3 col-xs-12">
+							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-3')->toHtml() ?>
+						</div>					
+					</div>
+				</div>
+				<div class = "col-lg-5 col-sm-12 col-xs-12">
+					<?php echo $this->getChildHtml('topLinks') ?>
+				</div>			
 			</div>
     	    <div class="clearer"></div>
     	</div>
     </div>
+	<div class="header-top">    	
+			<div class="header">
+				<div class = "row">
+					<div class = "col-lg-2 col-sm-3 col-xs-12"					
+						<h1 class="logo"><strong></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+					</div>
+					
+					<div class = "col-lg-8 col-sm-9 col-xs-12">
+						<div class="header-usps">
+							<div class = "row">
+								<div class="usp1 col-lg-12 col-sm-12 col-xs-12">
+									<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-banner')->toHtml() ?>
+								</div>								
+							</div>
+						</div>
+					</div>
+					
+					<div class = "col-lg-2 col-sm-12 col-xs-12"> 
+													
+									<div class = "row">
+										<div class = "col-lg-12 col-sm-12 col-xs-12">
+											<?php echo $this->getChildHtml('topSearch')?>
+										</div>				
+									</div>												
+					</div>	
+				</div>
+				<div class="clearer"></div>
+			</div>		
+    </div>
     
     <?php echo $this->getChildHtml('topMenu') ?>
-    <div class="quick-access-container">
-    	<div class="quick-access">
-    		<?php echo $this->getChildHtml('topSearch') ?>
-    	    <?php echo $this->getChildHtml('topLinks') ?>
-    	    <div class="clearer"></div>
-    	</div>
-    </div>
+
+    
+
+	
 </div>
