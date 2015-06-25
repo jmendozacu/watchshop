@@ -36,8 +36,10 @@ Default layout, loads most of the pages
         <block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
 
             <block type="page/html_head" name="head" as="head">
-				<action method="addJs"><script>prototype/prototype.js</script></action>
+				
 				<action method="addJs"><script>lib/jquery/jquery-1.10.2.min.js</script></action>
+				
+				<action method="addJs"><script>prototype/prototype.js</script></action>
                 <action method="addJs"><script>lib/jquery/noconflict.js</script></action>
 				
 				<action method="addJs"><script>bootstrap/bootstrap.js</script></action>
@@ -68,13 +70,22 @@ Default layout, loads most of the pages
 				<action method="addCss"><stylesheet>css/mystyles.css</stylesheet></action>				
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
-                <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>				
+                <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
+
+				<!-- css owl.carousel -->
+				
+				<action method="addCss"><stylesheet>owl.carousel/owl-carousel/owl.carousel.css</stylesheet></action>
+				<action method="addCss"><stylesheet>owl.carousel/owl-carousel/owl.theme.css</stylesheet></action>
+				
 												
                 <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
                 <action method="addItem"><type>skin_js</type><name>js/ie6.js</name><params/><if>lt IE 7</if></action>
-				<action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.swipe.min.js</name></action>				
-                <action method="addItem"><type>skin_js</type><name>js/slideshow.js</name></action>
+			
+				
+				<!-- js owl.carousel -->
+				<!-- <action method="addJs"><script>lib/jquery/jquery-1.9.1.min.js</script></action> -->
+				<action method="addItem"><type>skin_js</type><name>owl.carousel/owl-carousel/owl.carousel.js</name></action>
+				
 								
             </block>
 
