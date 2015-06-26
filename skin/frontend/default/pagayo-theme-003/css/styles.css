@@ -2450,6 +2450,11 @@ a.menuBox span{
 	margin: 0 auto; 
 }
 
+.std ul.products-grid {
+    list-style: none;
+    padding-left: 0;
+}
+
 .products-grid.last { 
 	border-bottom: 0; 
 }

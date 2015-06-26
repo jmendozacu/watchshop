@@ -57,12 +57,13 @@ if (typeof Object.create !== "function") {
             if (typeof base.options.jsonPath === "string") {
                 url = base.options.jsonPath;
                 $.getJSON(url, getData);
-            } else if(typeof base.options.jsonStr === "string")
+            } else if(typeof base.options.jsonInput === "string")
 			{
-				var parseJson = $.parseJSON(base.options.jsonStr);
-				console.log(parseJson);
+				var parseJson = $.parseJSON(base.options.jsonInput);
 				getData(parseJson);
-			}
+			} else if(typeof base.options.jsonInput === "object") {
+                getData(base.options.jsonInput);
+            }
 			else {
                 base.logIn();
             }
@@ -1496,7 +1497,7 @@ if (typeof Object.create !== "function") {
         autoHeight : false,
 
         jsonPath : false,
-		jsonStr: false,
+        jsonInput: false,
         jsonSuccess : false,
 
         dragBeforeAnimFinish : true,

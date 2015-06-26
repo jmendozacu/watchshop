@@ -1,50 +1,4 @@
 <?php
-/**
- * Magento
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License (AFL 3.0)
- * that is bundled with this package in the file LICENSE_AFL.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/afl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magentocommerce.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade Magento to newer
- * versions in the future. If you wish to customize Magento for your
- * needs please refer to http://www.magentocommerce.com for more information.
- *
- * @category    design
- * @package     base_default
- * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
- * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
- */
-?>
-<style>
-    #owl-demo .item{
-        background: #a1def8;
-        padding: 30px 0px;
-        display: block;
-        margin: 5px;
-        color: #FFF;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        text-align: center;
-    }
-    </style>
-<?php
-/**
- * Product list template
- *
- * @see Mage_Catalog_Block_Product_List
- */
-?>
-<?php
     $_productCollection=$this->getLoadedProductCollection();
     $_helper = $this->helper('catalog/output');
 ?>
@@ -112,11 +66,9 @@
 	
     <?php 
 	$json_str = '{"owl": [';
-	$i =0;
-	foreach ($_productCollection as $_product): ?>
-	
-	<?php 
-	$i++;
+
+	foreach ($_productCollection as $_product):
+
 	$specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
 	if ($specialprice){
 		
@@ -155,7 +107,7 @@
 	
 <?php
 $str = <<<EOF
-<li class="item">$phrase1 $phrase2 $phrase3 <div class="item-bottom">$phrase4							
+<li class="item">$phrase1.$phrase2.$phrase3<div class="item-bottom">$phrase4
 <div class="actions">
 	$phrase5							
 </div>
@@ -164,15 +116,11 @@ $str = <<<EOF
 EOF;
 ?>
         <?php
-		$str = preg_replace("/\"|\r\n+|\r+|\n+|\t+/i", " ", $str);
-		if($i == $_collectionSize) {
-			$json_str .= '{ "item" : "'.$str.'"}';
-		} else {
-			$json_str .= '{ "item" : "'.$str.'"},';
-		}		
-		
-		?>        
-        <?php endforeach;
+
+		$str = preg_replace("/\r\n+|\r+|\n+|\t+/i", "", $str);
+        $json_str .= "{ 'item' : '".$str."'},";
+		endforeach;
+        $json_str = rtrim($json_str,',');
 		$json_str .= ']}';
 		?>
         <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
@@ -184,21 +132,13 @@ EOF;
 </div>
 <?php endif; ?>
 
+<ul id="sales-off" class="products-grid"></ul>
 
-<ul id="owl-demo" class="products-grid">
-</ul>
-
-
-
-
-<script>
+<script type="text/javascript" >
      jQuery(document).ready(function() {
 
-      jQuery("#owl-demo").owlCarousel({
-        //jsonPath : "json/data.json"
-		jsonStr : '<?php echo $json_str;?>'
-		
+      jQuery("#sales-off").owlCarousel({
+          jsonInput : <?php echo $json_str;?>
       });
-
     });
 </script>
