@@ -82,8 +82,7 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_js</type><name>js/ie6.js</name><params/><if>lt IE 7</if></action>
 			
 				
-				<!-- js owl.carousel -->
-				<!-- <action method="addJs"><script>lib/jquery/jquery-1.9.1.min.js</script></action> -->
+				<!-- js owl.carousel -->				
 				<action method="addItem"><type>skin_js</type><name>owl.carousel/owl-carousel/owl.carousel.js</name></action>
 				
 								

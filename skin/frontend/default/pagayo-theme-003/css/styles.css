@@ -268,8 +268,6 @@ ul,ol {
 .page-popup { 
 	padding: 20px; 
 	text-align: left; 
-}
-
 .main-supercontainer { 
 	background: #222 url(../images/bg-darklinen2.png) repeat center top; 
 }
@@ -2480,7 +2478,7 @@ a.menuBox span{
 }
 
 .products-grid li.item.last { 
-	margin-right: 0; 
+	margin-right: 0;
 }
 .products-grid .product-item{
 	margin-right: 2%;
@@ -4941,10 +4939,7 @@ a.minimal-price-link .label{
 	color: #fff; 
 }
 
-.footer2 { 
-	margin: 0 auto; 
-	width: 96%;
-}
+
 
 .footer3-container { 
 	padding: 16px 0 22px; 
@@ -4955,64 +4950,8 @@ a.minimal-price-link .label{
 	width: 96%;
 }
 
-/* Footer 1
-------------------------------------- */
 
-.footer2 .headline{ 
-	text-transform: uppercase; 
-	font: 16px "Times New Roman", Times, Georgia, serif; 
-	margin-bottom: 12px; 
-}
 
-.footer2 .newsletter{ 
-	float: left; 
-	width: 320px; 
-}
-
-.footer2 .newsletter input{ 
-	float: left;
-	width: 260px; 
-	padding: 8px; 
-	font-size: 13px; 
-	color: #444; 
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px; 
-	border: 1px solid #bbb; 
-	margin-right: 3px; 
-	background-color: #fff; 
-}
-
-.footer2 .newsletter button{ 
-	-webkit-border-fit: lines;
-	overflow: visible;
-	margin: 0;
-	width: 70px;
-	height: 33px !important;
-	cursor: pointer;
-	font: 12px/33px Arial, Helvetica, sans-serif;
-	text-align: center;
-	color: #fff;
-	white-space: nowrap; 
-	padding-left: 12px; 
-	padding-right: 12px; 
-}
-
-.footer2 .newsletter button:hover{ 
-}
-
-.footer2 .footer-social{ 
-	float: right;
-}
-
-.footer2 .footer-social .social-icons li{ 
-	display: inline-block; 
-	margin-left: 4px; 
-}
-
-.footer2 .footer-social .social-icons a img:hover{ 
-	opacity: 0.7; 
-}
 
 /* Footer 2
 ------------------------------------- */
@@ -5030,15 +4969,26 @@ a.minimal-price-link .label{
 	float: left;
 	/* width: 100%; */
 }
+.footer2 li{ 
+	margin-bottom: 5px; 
+}
 
+.footer2 .footer-payments{
+	width: 100%;
+}
+
+.footer2 .footer-payments .payment-icons li{ 
+	display: inline-block; 
+	margin-left: 1%; 
+}
 .footer2 .newsletter{ 
 	float: left; 
-	/* width: 480px;  */
+	width: 100%;
 }
 
 .footer2 .newsletter input{ 
 	float: left;
-	width: 200px; 
+	width: 70%; 
 	padding: 8px; 
 	font-size: 13px; 
 	color: #444; 
@@ -5054,7 +5004,7 @@ a.minimal-price-link .label{
 	-webkit-border-fit: lines;
 	overflow: visible;
 	margin: 0;
-	width: auto;
+	width: 25%;
 	height: 33px !important;
 	cursor: pointer;
 	font: 12px/33px Arial, Helvetica, sans-serif;
@@ -5070,11 +5020,12 @@ a.minimal-price-link .label{
 
 .footer2 .footer-social{ 
 	float: left;
+	width:100%;
 }
 
 .footer2 .footer-social .social-icons li{ 
 	display: inline-block; 
-	margin-left: 4px; 
+	margin-left: 1%; 
 }
 
 .footer2 .footer-social .social-icons a img:hover{ 
@@ -5091,13 +5042,7 @@ a.minimal-price-link .label{
 	color: #aaa; 
 }
 
-.footer2 li{ 
-	margin-bottom: 5px; 
-}
-.footer2 .footer-payments .payment-icons li{ 
-	display: inline-block; 
-	margin-left: 2px; 
-}
+
 /* Footer 3
 ------------------------------------- */
 

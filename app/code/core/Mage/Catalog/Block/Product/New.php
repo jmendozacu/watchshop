@@ -36,7 +36,7 @@ class Mage_Catalog_Block_Product_New extends Mage_Catalog_Block_Product_Abstract
     /**
      * Default value for products count that will be shown
      */
-    const DEFAULT_PRODUCTS_COUNT = 10;
+    const DEFAULT_PRODUCTS_COUNT = 20;
 
     /**
      * Products count
@@ -53,7 +53,7 @@ class Mage_Catalog_Block_Product_New extends Mage_Catalog_Block_Product_Abstract
         parent::_construct();
 
         $this->addColumnCountLayoutDepend('empty', 6)
-            ->addColumnCountLayoutDepend('one_column', 5)
+            ->addColumnCountLayoutDepend('one_column', 6)
             ->addColumnCountLayoutDepend('two_columns_left', 4)
             ->addColumnCountLayoutDepend('two_columns_right', 4)
             ->addColumnCountLayoutDepend('three_columns', 3);

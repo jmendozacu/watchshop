@@ -54,12 +54,14 @@
         			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt003-footer-box3')->toHtml() ?>					
         		</div>
         		<div class="box4 col-lg-3 col-sm-6 col-xs-12">        			
-						<div class="newsletter">	
+						<div class="newsletter">
 							<div class="headline"><?php echo $this->__('Newsletter') ?></div>	    	
+							<div class = "row">
 							<?php echo $this->getChildHtml('left.newsletter') ?>
+							</div>
 						</div>		
 						<p>&nbsp;</p>					
-						<div class="footer-social">
+						<div class="footer-social row">
 							<div class="headline"><?php echo $footersocial->getTitle(); ?></div>
 							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt003-footer-social')->toHtml() ?>
 						</div>					

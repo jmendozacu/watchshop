@@ -1,0 +1,104 @@
+<?php
+/***************************************************************************
+	@extension	: Bestseller Product.
+	@copyright	: Copyright (c) 2015 Capacity Web Solutions.
+	( http://www.capacitywebsolutions.com )
+	@author		: Capacity Web Solutions Pvt. Ltd.
+	@support	: magento@capacitywebsolutions.com	
+***************************************************************************/
+?>
+<style>
+.productList { float:left; width:720px; }
+.productList .product { background:#fff; border:1px solid #ccc; padding:5px;  float:left; margin:10px 8px 10px 0; text-align:center; }
+.productList .product .cl { padding:0 0 0 0px; text-align:center;}
+.productList .product .prodDetails {text-align:center; padding:0 0 0 0px;  }
+.productList .product .addCompare { text-align:center;  clear:both; }
+.productList .product .addWishlist {clear:both; text-align:center; }
+</style>
+<?php
+	$results = array();
+	$pro = array();
+	$bestseller_collection = $this->getBestsellerProduct();
+	foreach($bestseller_collection as $collection){
+		$pro[] = $collection->getEntityId();
+	}
+    if($this->getChooseProducts() == "1") {
+		$results = $pro;
+	}elseif($this->getChooseProducts() == "2") {
+	   $results = $this->getProductIds();
+	}else{
+		if($this->getSortOrder() == 1){
+			$results = array_unique(array_merge($pro, $this->getProductIds()));
+		}elseif($this->getSortOrder() == 2){
+			$results = array_unique(array_merge($this->getProductIds(),$pro));
+		}else{
+			$results = array_unique(array_merge($pro, $this->getProductIds()));
+			shuffle($results);
+		}
+	}
+	$upperLimit = ($this->getLimit()) ? $this->getLimit() : 12;
+	$itemPerRow = ($this->getItemsPerRow()) ? $this->getItemsPerRow() : 1 ;
+	$products_price = $this->getProductsPrice();  
+	$review = $this->getReview();
+?>
+<?php if($this->getEnabled()): ?>
+<?php if($this->getHeader()): ?>
+        <?php if(count($results) > 0) {
+            echo '<div class="sectionHead"><h2>'.$this->getHeader().'</h2></div>';
+        } ?>
+
+ <?php endif; ?>
+	<div class="category-products">  
+		<?php echo $this->getPagerHtml();
+		$product_count = 0;
+        $json = '{"owl": [';
+		foreach($results as $result){
+
+			$_product = $this->getProducts($result);
+			if(!$_product){
+				continue;
+			}
+            // Limit number of products on page.
+            $product_count++;
+            $str = '';
+            if($product_count > $upperLimit) {
+                break;
+            }
+		$str .= '<li class="item">';
+        $str .= '<a href="'.$this->getBaseUrl().$_product['url_path'].'" title="'.$this->htmlEscape($_product->getName()).'" class="product-image">';
+		$str .= '<img src="'.$this->helper('catalog/image')->init($_product, 'small_image')->resize(($this->getImageHeight()) ? $this->getImageHeight() : 160,($this->getImageWidth()) ? $this->getImageWidth() : 160).'" alt="'.$this->htmlEscape($_product['name']).'"/></a>';
+		$str .= '<h3 class="product-name"><a href="'.$this->getBaseUrl().$_product['url_path'].'" title="'.$this->htmlEscape($_product['name']).'">'.$this->htmlEscape($_product['name']).'</a></h3>';
+        $str .= '<div class="item-bottom">';
+							if($products_price == 1) {
+								$_product = Mage::getModel('catalog/product')->load($_product->getId());
+								$str .= $this->getPriceHtml($_product, true);
+							}
+            $str .= '<div class="actions">';
+							$addtocartval = $this->getAddToCart();
+							if($addtocartval == 1){
+								if($_product->isSaleable()):
+									$str .= '<button class="button btn-cart" onclick="setLocation('.$this->getAddToCartUrl($_product).')"><span>'.$this->__('Add to Cart').'</span></button>';
+								 else:
+									$str .= '<span class="out-of-stock">'.$this->__("Out of stock").'</span>';
+								endif;
+							}
+			$str .= '</div></div></li>';
+            $str = preg_replace("/\r\n+|\r+|\n+|\t+/i", "", $str);
+
+            $json .= "{ 'item' : '".$str."'},";
+		}
+        $json = rtrim($json,',');
+        $json .= ']}';
+        ?>
+	</div>
+    <ul id="best-seller" class="products-grid"></ul>
+
+    <script type="text/javascript" >
+        jQuery(document).ready(function() {
+
+            jQuery("#best-seller").owlCarousel({
+                jsonInput : <?php echo $json;?>
+            });
+        });
+    </script>
+ <?php endif; ?>
