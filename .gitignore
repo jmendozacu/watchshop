@@ -3,4 +3,5 @@ var/session/*
 .settings/*
 .idea/*
 .project
-.builpath
+.buildpath
+app/etc/local.xml
