@@ -112,14 +112,36 @@ EOF;
 </div>
 
 <ul id="new-pro" class="products-grid"></ul>
+<div class="customNavigation">
+    <a class="btn prev">Previous</a>
+    <a class="btn next">Next</a>
+    <a class="btn play">Autoplay</a>
+    <a class="btn stop">Stop</a>
+</div>
 
 
 <script type="text/javascript" >
     jQuery(document).ready(function() {
 
-        jQuery("#new-pro").owlCarousel({
+        var owl_new_product = jQuery("#new-pro");
+
+        owl_new_product.owlCarousel({
             jsonInput : <?php echo $json_str;?>
         });
+
+        // Custom Navigation Events
+        jQuery(".next").click(function(){
+            owl_new_product.trigger('owl.next');
+        })
+        jQuery(".prev").click(function(){
+            owl_new_product.trigger('owl.prev');
+        })
+        jQuery(".play").click(function(){
+            owl_new_product.trigger('owl.play',3000); //owl.play event accept autoPlay speed as second parameter
+        })
+        jQuery(".stop").click(function(){
+            owl_new_product.trigger('owl.stop');
+        })
     });
 	
 </script>

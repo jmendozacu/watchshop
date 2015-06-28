@@ -131,12 +131,33 @@ EOF;
 <?php endif; ?>
 
 <ul id="sales-off" class="products-grid"></ul>
-
+<div class="customNavigation">
+    <a class="btn prev">Previous</a>
+    <a class="btn next">Next</a>
+    <a class="btn play">Autoplay</a>
+    <a class="btn stop">Stop</a>
+</div>
 <script type="text/javascript" >
      jQuery(document).ready(function() {
 
-      jQuery("#sales-off").owlCarousel({
+         var owl_save = jQuery("#sales-off");
+
+         owl_save.owlCarousel({
           jsonInput : <?php echo $json_str;?>
-      });
+         });
+
+         // Custom Navigation Events
+         jQuery(".next").click(function(){
+             owl_save.trigger('owl.next');
+         })
+         jQuery(".prev").click(function(){
+             owl_save.trigger('owl.prev');
+         })
+         jQuery(".play").click(function(){
+             owl_save.trigger('owl.play',3000); //owl.play event accept autoPlay speed as second parameter
+         })
+         jQuery(".stop").click(function(){
+             owl_save.trigger('owl.stop');
+         })
     });
 </script>
