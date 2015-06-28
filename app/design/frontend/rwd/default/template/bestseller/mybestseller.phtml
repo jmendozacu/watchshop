@@ -7,14 +7,6 @@
 	@support	: magento@capacitywebsolutions.com	
 ***************************************************************************/
 ?>
-<style>
-.productList { float:left; width:720px; }
-.productList .product { background:#fff; border:1px solid #ccc; padding:5px;  float:left; margin:10px 8px 10px 0; text-align:center; }
-.productList .product .cl { padding:0 0 0 0px; text-align:center;}
-.productList .product .prodDetails {text-align:center; padding:0 0 0 0px;  }
-.productList .product .addCompare { text-align:center;  clear:both; }
-.productList .product .addWishlist {clear:both; text-align:center; }
-</style>
 <?php
 	$results = array();
 	$pro = array();
@@ -92,12 +84,6 @@
         ?>
 	</div>
     <ul id="best-seller" class="products-grid"></ul>
-    <div class="customNavigation">
-        <a class="btn prev">Previous</a>
-        <a class="btn next">Next</a>
-        <a class="btn play">Autoplay</a>
-        <a class="btn stop">Stop</a>
-    </div>
 
     <script type="text/javascript" >
         jQuery(document).ready(function() {
@@ -107,20 +93,6 @@
             owl_best_seller.owlCarousel({
                 jsonInput : <?php echo $json;?>
             });
-
-            // Custom Navigation Events
-            jQuery(".next").click(function(){
-                owl_best_seller.trigger('owl.next');
-            })
-            jQuery(".prev").click(function(){
-                owl_best_seller.trigger('owl.prev');
-            })
-            jQuery(".play").click(function(){
-                owl_best_seller.trigger('owl.play',3000); //owl.play event accept autoPlay speed as second parameter
-            })
-            jQuery(".stop").click(function(){
-                owl_best_seller.trigger('owl.stop');
-            })
         });
     </script>
  <?php endif; ?>

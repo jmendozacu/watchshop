@@ -1295,7 +1295,7 @@ a.button:hover {
   /* max-width: 1260px; */
   margin: 0 auto;
   padding: 15px;
-  /* background: #222 url(../images/bg-darklinen2.png) repeat center top;   */
+  background: #222 url(../images/bg-darklinen2.png) repeat center top;
 }
 .main-container:after,
 .footer-container:after {
@@ -3182,7 +3182,7 @@ body {
   .page-header {
     /* max-width: 1260px; */
     margin: 0 auto;
-    padding: 0 30px;
+    /*padding: 0 30px;*/
 	border: none;	
   }
 
@@ -3300,8 +3300,9 @@ body {
 }
 
 .header-container .form-search { 
-	float: left;
-	min-width: 100%;
+	float: right;
+    margin-right: 30px;
+	/*min-width: 100%;*/
 }
 
 .header-container .form-search input{ 
@@ -3313,7 +3314,7 @@ body {
 	-webkit-border-radius: 3px;
 	border-radius: 3px; 
 	border: 1px solid #bbb; 
-	background: #fff url(../images/search-icon-bg.png) no-repeat 12px 6px; 
+	/*background: #fff url(../images/search-icon-bg.png) no-repeat 12px 6px; */
 }
 
 .header-container .form-search button{ 
@@ -3375,6 +3376,11 @@ body {
 	margin: 0 auto;
 }
 
+.header-container .quick-access ul.boilerplate li {
+    float: left;
+    padding-left: 30px;
+}
+
 .header-container .quick-access .header-line {	
 	margin-top: 7px;
 	padding-left: 0px;
@@ -3384,8 +3390,9 @@ body {
 .header-container .quick-access .links {
 	float: right;
 	text-align: right; 
-	margin-top: 7px;	
-	font-size: 13px; 
+	/*margin-top: 7px;	*/
+	font-size: 13px;
+    margin-right: 20px;
 }
 .header-container .quick-access .links  li{
 	display: inline;
@@ -3394,8 +3401,24 @@ body {
 }
 .header-container .quick-access .links  li.last{
 	
-	padding-right: 0px;
+	padding-right: 0;
 	border-right: none;
+}
+
+.header-top .header-line-2 li {
+    float: left;
+}
+
+.column-1 {
+    width: 33.33%;
+}
+
+.column-2 {
+    width: 66.66%;
+}
+
+.column-3 {
+    width: 99.99%;
 }
 
  
@@ -3405,7 +3428,7 @@ body {
 }
 .header-language-container,
 .page-header {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ============================================ *
@@ -3446,7 +3469,7 @@ body {
 .visible-desktop .store-language-container select {
   max-width: 100%;
 }
-}
+
 .header-language-background,
 .header-language-background a {
   color: #e6e6e6;
@@ -3703,7 +3726,7 @@ a.skip-link {
   display: block;
   color: #636363;
   line-height: 30px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  /*font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;*/
 }
 .nav-primary li {
   position: relative;
@@ -3910,7 +3933,7 @@ a.skip-link {
   text-indent: -9999px;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 40px;
   height: 40px;
   border: 0;
@@ -3926,7 +3949,8 @@ a.skip-link {
   height: 30px;
   margin-top: -15px;
   margin-left: -15px;
-  background-position: 4px -146px;
+  /*background-position: 4px -146px;*/
+    background: #fff url(../images/search-icon-bg.png) no-repeat 12px 6px;
 }
 
 #search_mini_form .search-button:hover:before {
@@ -4189,7 +4213,7 @@ a.skip-link {
  */
 .footer,
 .footer button {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer {
@@ -7287,26 +7311,26 @@ p.product-name a:hover {
 .opc.opc-firststep-login .section:not(#opc-login) .step-title,
 .opc-block-progress-step-login {
   -webkit-transition: opacity 300ms linear;
-  -webkit-transition-delay: 0;
-  -moz-transition: opacity 300ms linear 0;
-  -o-transition: opacity 300ms linear 0;
-  transition: opacity 300ms linear 0;
+  -webkit-transition-delay: 0ms;
+  -moz-transition: opacity 300ms linear 0ms;
+  -o-transition: opacity 300ms linear 0ms;
+  transition: opacity 300ms linear 0ms;
 }
 
 .opc.opc-firststep-login .section#opc-login .step-title .number {
   -webkit-transition: width 80ms linear;
-  -webkit-transition-delay: 0;
-  -moz-transition: width 80ms linear 0;
-  -o-transition: width 80ms linear 0;
-  transition: width 80ms linear 0;
+  -webkit-transition-delay: 0ms;
+  -moz-transition: width 80ms linear 0ms;
+  -o-transition: width 80ms linear 0ms;
+  transition: width 80ms linear 0ms;
 }
 
 .opc.opc-firststep-login .section#opc-login .step-title h2 {
   -webkit-transition: margin-left 80ms linear;
-  -webkit-transition-delay: 0;
-  -moz-transition: margin-left 80ms linear 0;
-  -o-transition: margin-left 80ms linear 0;
-  transition: margin-left 80ms linear 0;
+  -webkit-transition-delay: 0ms;
+  -moz-transition: margin-left 80ms linear 0ms;
+  -o-transition: margin-left 80ms linear 0ms;
+  transition: margin-left 80ms linear 0ms;
 }
 
 /* When a user progresses from the "Checkout Method" to "Billing Information" for the first time, the              */

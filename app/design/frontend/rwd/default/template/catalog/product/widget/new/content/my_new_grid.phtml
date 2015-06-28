@@ -24,20 +24,6 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<style>
-    div.category-products ul {
-        list-style: none;
-        padding-left: 0px;
-    }
-	#owl-demo .item{
-	  margin: 3px;
-	}
-	#owl-demo .item img{
-	  display: block;
-	  width: 100%;
-	  height: auto;
-	}
-</style>
 <?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
 <h2><?php echo $this->__('New Products') ?></h2>
 <div class="category-products">
@@ -112,12 +98,6 @@ EOF;
 </div>
 
 <ul id="new-pro" class="products-grid"></ul>
-<div class="customNavigation">
-    <a class="btn prev">Previous</a>
-    <a class="btn next">Next</a>
-    <a class="btn play">Autoplay</a>
-    <a class="btn stop">Stop</a>
-</div>
 
 
 <script type="text/javascript" >
@@ -128,20 +108,6 @@ EOF;
         owl_new_product.owlCarousel({
             jsonInput : <?php echo $json_str;?>
         });
-
-        // Custom Navigation Events
-        jQuery(".next").click(function(){
-            owl_new_product.trigger('owl.next');
-        })
-        jQuery(".prev").click(function(){
-            owl_new_product.trigger('owl.prev');
-        })
-        jQuery(".play").click(function(){
-            owl_new_product.trigger('owl.play',3000); //owl.play event accept autoPlay speed as second parameter
-        })
-        jQuery(".stop").click(function(){
-            owl_new_product.trigger('owl.stop');
-        })
     });
 	
 </script>
