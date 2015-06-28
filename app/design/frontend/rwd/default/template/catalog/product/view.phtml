@@ -54,9 +54,26 @@
             </div>
 
             <div class="product-shop">
+
                 <div class="product-name">
                     <span class="h1"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>
                 </div>
+
+                <div class="product-id">
+                    <?php echo "Mã số: ".$_helper->productAttribute($_product, $_product->getName(), 'id') ?>
+                </div>
+
+                <?php if ($_product->getCountryOfManufacture()):?>
+                    <div class="product-country">
+                        <?php echo "Xuất xứ: ".$_product->getAttributeText('country_of_manufacture');?>
+                    </div>
+                <?php endif;?>
+
+                <?php if ($_product->getShortDescription()):?>
+                    <div class="short-description">
+                        <div class="std"><?php echo "Bảo hành: ".$_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+                    </div>
+                <?php endif;?>
 
                 <div class="price-info">
                     <?php echo $this->getPriceHtml($_product); ?>
@@ -70,15 +87,6 @@
                 </div>
 
                 <?php echo $this->getChildHtml('alert_urls') ?>
-
-                <?php if ($_product->getShortDescription()):?>
-                    <div class="short-description">
-                        <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
-                    </div>
-                <?php endif;?>
-
-
-
 
                 <?php echo $this->getChildHtml('other');?>
 
