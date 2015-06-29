@@ -537,13 +537,13 @@ h2, .h2 {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
   font-style: normal;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 h3, .h3 {
@@ -1359,7 +1359,9 @@ a.button:hover {
 .col1-layout .col-main {
   float: none;
   width: auto;
-  padding: 0;
+  background: #fff;
+  border-radius: 3px;
+  /*padding: 20px;*/
   /* Remove the 15px padding */
 }
 
@@ -1761,8 +1763,9 @@ a.button:hover {
 }
 
 .price-box .price {
-  color: #3399cc;
+  color: #000;
   font-size: 16px;
+    font-weight: bold;
 }
 
 .price-box .price,
@@ -1791,7 +1794,7 @@ a.button:hover {
  */
 .price-box .old-price,
 .price-box .special-price {
-  display: inline-block;
+  /*display: inline-block;*/
 }
 .price-box .old-price .price-label,
 .price-box .special-price .price-label {
@@ -1988,7 +1991,7 @@ span.weee {
  */
 .product-image,
 .no-touch .product-img-box .product-image:not(.zoom-available):hover {
-  position: relative;
+  /*position: relative;*/
   display: block;
   border: 1px solid #ededed;
 }
@@ -2037,7 +2040,7 @@ span.weee {
  * Standard Formatted Text Block
  */
 .std p {
-  margin: 0 0 1.5em;
+  /*margin: 0 0 1.5em;*/
 }
 
 .std ol {
@@ -2536,7 +2539,7 @@ form .legend {
 .input-box:after {
   content: '';
   display: table;
-  clear: both;
+  /*clear: both;*/
 }
 
 li.centinel-logos div.input-box img {
@@ -3409,18 +3412,6 @@ body {
     float: left;
 }
 
-.column-1 {
-    width: 33.33%;
-}
-
-.column-2 {
-    width: 66.66%;
-}
-
-.column-3 {
-    width: 99.99%;
-}
-
  
  /* /////////////////////////////////////////////////////////////////////// */
 
@@ -3705,7 +3696,7 @@ a.skip-link {
   #header-nav {
     display: block;
     /* Force visibility */
-    border-bottom: 1px solid #ededed;
+    /*border-bottom: 1px solid #ededed;*/
   }
 }
 /* ============================================ *
@@ -4219,7 +4210,7 @@ a.skip-link {
 .footer {
   clear: both;
   width: 100%;
-  border-top: 1px solid #cccccc;
+  /*border-top: 1px solid #cccccc;*/
   padding-top: 30px;
   /* -------------------------------------------- *
    * Social icons
@@ -4377,6 +4368,51 @@ a.skip-link {
   margin-top: 30px;
   padding: 30px 0;
 }
+
+.footer .headline{
+    text-transform: uppercase;
+    font: 18px "Times New Roman", Times, Georgia, serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.footer a{
+    color: #aaa;
+}
+.footer li{
+    margin-bottom: 5px;
+}
+
+.footer .newsletter input{
+    float: left;
+    width: 200px;
+    padding: 8px;
+    font-size: 13px;
+    color: #444;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    margin-right: 3px;
+    background-color: #fff;
+}
+
+.footer .newsletter button{
+    overflow: visible;
+    margin: 0;
+    width: auto;
+    height: 33px !important;
+    cursor: pointer;
+    font: 12px/33px Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: #222;
+    border-radius: 3px;
+}
+
+
 @media only screen and (max-width: 1199px) {
   .footer .links {
     width: 22.65625%;
@@ -4469,8 +4505,8 @@ h3.product-name a:hover,
 h4.product-name a:hover,
 h5.product-name a:hover,
 p.product-name a:hover {
-  color: #3399cc;
-  text-decoration: none;
+  /*color: #3399cc;*/
+  /*text-decoration: none;*/
 }
 
 .products-grid .product-name,
@@ -4479,10 +4515,19 @@ p.product-name a:hover {
   margin-bottom: 5px;
   font-size: 14px;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    padding: 0 7px;
 }
 .products-grid .product-name a,
 .products-list .product-name a {
-  font-weight: 500;
+  font-weight: 400;
+  width: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ============================================ *
@@ -4603,6 +4648,49 @@ p.product-name a:hover {
 .products-grid .product-image.loading:before, .products-grid .product-image.loading:after {
   display: block;
 }
+
+ul.owl-theme {
+    list-style: none;
+}
+
+ul.owl-theme li {
+    border: 1px gray solid;
+    margin: 5%;
+}
+
+.products-grid .label-sale {
+    position: absolute;
+}
+
+.products-grid .product-image {
+    display: block;
+    max-width: 100%;
+    /* height: auto; */
+    margin: 0 auto;
+    padding: 10px 10px 0;
+    border: none;
+}
+
+.products-grid .product-name {
+    text-align: center;
+}
+
+.products-grid .item-bottom {
+    padding: 10px;
+    height: 65px;
+}
+
+/* Special price
+------------------------------------- */
+
+.special-price .price-label {
+    white-space: nowrap;
+}
+
+.special-price .price {
+    color: #ae0000;
+}
+
 
 @media only screen and (min-width: 480px) {
   /* Config: Three columns + flexible gutter */

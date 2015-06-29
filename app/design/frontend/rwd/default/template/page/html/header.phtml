@@ -58,14 +58,14 @@
 				<div class="header-top">    	
                     <div class="header clearer">
                         <ul class="header-line-2">
-                            <li class="column-1">
+                            <li class="col-md-3">
                                 <h1 class="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
                             </li>
-                            <li class="column-1">
+                            <li class="col-md-6">
                                 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-banner')->toHtml() ?>
                             </li>
                         </ul>
-                        <div class="column-1 form-search">
+                        <div class="col-md-3 form-search">
                         <?php echo $this->getChildHtml('topSearch')?>
                         </div>
                     </div>
