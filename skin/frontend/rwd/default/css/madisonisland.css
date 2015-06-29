@@ -199,6 +199,10 @@ body .promos > li {
   display: none;
 }
 
+.cms-index-index .products-grid .actions {
+    display: block;
+}
+
 /* ============================================ *
  * Category Landing Pages
  * ============================================ */
@@ -347,4 +351,18 @@ body .promos > li {
 .catalog-category-view div.categoryland-caption p.desc {
   font: italic 18px/28px Georgia, "Times New Roman", Times, serif;
   color: #656565;
+}
+
+.std { padding: 20px;}
+
+#brands .item img {
+    border: 2px solid #fff;
+}
+
+.main {
+    background: #FFFFFF;
+}
+
+.main-contain {
+    padding: 20px;
 }

@@ -501,7 +501,7 @@ a {
 }
 
 a:hover {
-  color: #2e8ab8;
+  color: #636363;
   text-decoration: underline;
 }
 
@@ -919,7 +919,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .footer .button {
   background: #3399cc;
   display: inline-block;
-  padding: 7px 15px;
+  /*padding: 7px 15px;*/
   border: 0;
   color: #FFFFFF;
   font-size: 13px;
@@ -935,7 +935,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button:hover,
 #co-shipping-method-form .buttons-set .button:hover,
 .footer .button:hover {
-  background: #2e8ab8;
+  background: #636363;
   cursor: pointer;
 }
 .button:active,
@@ -1138,12 +1138,13 @@ a.button:hover {
 .breadcrumbs {
   overflow: hidden;
   margin: -15px 0 15px;
+    padding-top: 20px;
 }
 
 .breadcrumbs li {
   float: left;
   font-size: 12px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -1764,8 +1765,9 @@ a.button:hover {
 
 .price-box .price {
   color: #000;
-  font-size: 16px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .price-box .price,
@@ -1796,8 +1798,8 @@ a.button:hover {
 .price-box .special-price {
   /*display: inline-block;*/
 }
-.price-box .old-price .price-label,
-.price-box .special-price .price-label {
+.cms-home .price-box .old-price .price-label,
+.cms-home .price-box .special-price .price-label {
   display: none;
 }
 .price-box .old-price .price,
@@ -1812,7 +1814,7 @@ a.button:hover {
 
 .price-box .special-price {
   color: #3399cc;
-  padding-left: 1em;
+  /*padding-left: 1em;*/
 }
 .price-box .special-price .price-label {
   color: #D84D3C;
@@ -4581,7 +4583,8 @@ p.product-name a:hover {
 .products-grid .actions {
   padding-top: 10px;
   position: absolute;
-  bottom: 0px;
+  bottom: -10px;
+  right: -135px;
   min-height: 85px;
   width: 100%;
 }
@@ -4678,6 +4681,23 @@ ul.owl-theme li {
 .products-grid .item-bottom {
     padding: 10px;
     height: 65px;
+}
+
+.products-grid .btn-cart,
+.products-grid .btn-cart:hover {
+    cursor: pointer;
+    border: 1px solid #777;
+    font: bold 11px/25px Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 25px;
+    background: #777;
+    background-image: -moz-linear-gradient(top,#bbbbbb,#777777);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#bbbbbb),to(#777777));
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#bbbbbb,endColorStr=#777777);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr=#bbbbbb, endColorStr=#777777)";
+    text-transform: uppercase;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 /* Special price
@@ -5294,10 +5314,10 @@ ul.owl-theme li {
 }
 .product-view .product-shop .product-name {
   display: none;
-  float: left;
+  /*float: left;*/
 }
 .product-view .product-shop .product-name .h1 {
-  float: left;
+  /*float: left;*/
   margin-bottom: 5px;
 }
 .product-view .product-shop .extra-info {
@@ -5307,9 +5327,9 @@ ul.owl-theme li {
   width: 70%;
 }
 .product-view .product-shop .price-info {
-  float: right;
-  padding-left: 15px;
-  text-align: right;
+  /*float: right;*/
+  /*padding-left: 15px;*/
+  text-align: left;
 }
 .product-view .product-shop .extra-info,
 .product-view .product-shop .price-info {
@@ -5338,12 +5358,12 @@ ul.owl-theme li {
 .product-view .product-shop .price-box .regular-price .price,
 .product-view .product-shop .price-box .special-price .price,
 .product-view .product-shop .price-box .full-product-price .price {
-  color: #3399cc;
+  /*color: #3399cc;*/
   font-size: 24px;
 }
 .product-view .product-shop .price-box .special-price .price-label {
   font-size: 16px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .product-view .product-shop .price-box .special-price span.weee {
   color: #636363;
@@ -5370,7 +5390,7 @@ ul.owl-theme li {
   display: inherit;
 }
 .product-view .old-price .price-label {
-  display: none;
+  /*display: none;*/
 }
 .product-view .add-to-cart-wrapper,
 .product-view .block-related {

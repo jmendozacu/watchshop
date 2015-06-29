@@ -71,7 +71,7 @@
 
                 <?php if ($_product->getShortDescription()):?>
                     <div class="short-description">
-                        <div class="std"><?php echo "Bảo hành: ".$_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+                        <?php echo "Bảo hành: ".$_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?>
                     </div>
                 <?php endif;?>
 
