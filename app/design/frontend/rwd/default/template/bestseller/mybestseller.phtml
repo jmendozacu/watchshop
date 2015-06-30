@@ -69,7 +69,7 @@
 							$addtocartval = $this->getAddToCart();
 							if($addtocartval == 1){
 								if($_product->isSaleable()):
-									$str .= '<button class="button btn-cart" onclick="setLocation('.$this->getAddToCartUrl($_product).')"><span>'.$this->__('Add to Cart').'</span></button>';
+									$str .= '<a href="'.$_product->getProductUrl().'"><button type="button" title="'.$this->__('Add to Cart').'" class="button btn-cart"><span><span>'.$this->__('Add to Cart').'</span></span></button></a>';
 								 else:
 									$str .= '<span class="out-of-stock">'.$this->__("Out of stock").'</span>';
 								endif;
