@@ -11011,7 +11011,7 @@ div.calendar table td.button {
 .gift-messages-form .item:after,
 .send-friend .form-list li p:after { 
 	display: block; 
-	content: "."; 
+	content: ".";
 	clear: both; 
 	font-size: 0; 
 	line-height: 0; 
