@@ -4583,10 +4583,10 @@ p.product-name a:hover {
 .products-grid .actions {
   padding-top: 10px;
   position: absolute;
-  bottom: -10px;
-  right: -135px;
+  bottom: -20px;
+  right: 10px;
   min-height: 85px;
-  width: 100%;
+  width: auto;
 }
 
 .products-grid .ratings .rating-box {
@@ -4659,6 +4659,7 @@ ul.owl-theme {
 ul.owl-theme li {
     border: 1px gray solid;
     margin: 5%;
+    position: relative;
 }
 
 .products-grid .label-sale {
