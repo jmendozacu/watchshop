@@ -361,6 +361,7 @@ body .promos > li {
 
 .main {
     background: #FFFFFF;
+    border-radius: 3px;
 }
 
 .main-contain {
