@@ -2922,6 +2922,15 @@ form .form-instructions {
 .data-table tbody td .item-options dt:after {
   content: ':';
 }
+.data-table .label{
+    display:table-cell;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #000000;
+    font-size: 100%;
+    font-weight: 100;
+    text-align: left;
+}
+
 
 /* ============================================ *
  * Generic Info Table
@@ -3198,9 +3207,13 @@ body {
  /* HEADER
 ========================================== */
 
-.logo { 
+.logo{
 	float: left; 
 	width: 100%;
+}
+
+.banner{
+    width: 100%;
 }
 
 .header-container { 	
@@ -4377,12 +4390,25 @@ a.skip-link {
     color: #fff;
     margin-bottom: 12px;
 }
+
+.footer .social-headline{
+    font: 18px "Times New Roman", Times, Georgia, serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
 .footer a{
     color: #aaa;
 }
 .footer li{
     margin-bottom: 5px;
 }
+
+.footer .newsletter .newsletter-headline{
+    font: 18px "Times New Roman", Times, Georgia, serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
 
 .footer .newsletter input{
     float: left;
@@ -5922,9 +5948,11 @@ ul.owl-theme li {
   border: 1px solid silver;
 }
 #product-attribute-specs-table th {
-  border-right: 1px solid silver;
+    border-right: 1px solid silver;
   border-bottom: 1px solid silver;
 }
+
+
 
 /* -------------------------------------------- *
  * Catalog - Grouped Product List
