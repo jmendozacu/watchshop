@@ -36,19 +36,26 @@
 <?php foreach ($this->getItems() as $_item): ?>
     <li>
         <?php if ($_item->getCount() > 0): ?>
-            <a href="<?php echo $this->urlEscape($_item->getUrl()) ?>">
-                <?php echo $_item->getLabel() ?>
-                <?php if ($this->shouldDisplayProductCount()): ?>
-                <span class="count">(<?php echo $_item->getCount() ?>)</span>
-                <?php endif; ?>
-            </a>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    <?php echo $_item->getLabel() ?>
+                    <?php if ($this->shouldDisplayProductCount()): ?>
+                        <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                    <?php endif; ?>
+                </label>
+            </div>
+
         <?php else: ?>
-            <span>
-                <?php echo $_item->getLabel(); ?>
-                <?php if ($this->shouldDisplayProductCount()): ?>
-                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
-                <?php endif; ?>
-            </span>
+            <div class="checkbox disabled">
+                <label>
+                    <input type="checkbox" value="" disabled>
+                    <?php echo $_item->getLabel() ?>
+                    <?php if ($this->shouldDisplayProductCount()): ?>
+                        <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                    <?php endif; ?>
+                </label>
+            </div>
         <?php endif; ?>
     </li>
 <?php endforeach ?>

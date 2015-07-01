@@ -36,10 +36,10 @@
     <?php if( $this->isExpanded() ): ?>
         <div class="sorter">
             <?php if( $this->isEnabledViewSwitcher() ): ?>
-                <p class="view-mode">
+                <div class="view-mode">
                     <?php $_modes = $this->getModes(); ?>
                     <?php if($_modes && count($_modes)>1): ?>
-                        <label><?php echo $this->__('View as') ?></label>
+                        <label style="margin-bottom: 0;"><?php echo $this->__('View as') ?></label>
                         <?php foreach ($this->getModes() as $_code=>$_label): ?>
                             <?php if($this->isModeActive($_code)): ?>
                                 <strong title="<?php echo $_label ?>" class="<?php echo strtolower($_code); ?>"><?php echo $_label ?></strong>
@@ -48,7 +48,7 @@
                             <?php endif; ?>
                         <?php endforeach; ?>
                     <?php endif; ?>
-                </p>
+                </div>
             <?php endif; ?>
 
             <div class="sort-by">
@@ -76,7 +76,7 @@
                 </p>
             <?php else: ?>
                 <p class="amount amount--no-pages">
-                    <strong><?php echo $this->__('%s Item(s)', $this->getTotalNum()) ?></strong>
+                    <strong><?php echo $this->__('There are %s Item(s)', $this->getTotalNum()) ?></strong>
                 </p>
             <?php endif; ?>
 

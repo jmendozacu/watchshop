@@ -2,6 +2,7 @@
 "%1$s incl tax.","%1$s incl tax."
 "%s - %s","%s - %s"
 "%s Item(s)","%s Sản phẩm"
+"There are %s Item(s)","Có %s Sản phẩm"
 "%s and above","%s nhiều hơn"
 "(%d)","(%d)"
 "(Copy data from: %s)","(Copy dữ liệu từ: %s)"

@@ -522,9 +522,9 @@ ul {
  * ============================================ */
 h1, .h1 {
   margin: 0;
-  margin-bottom: 0.7em;
+  /*margin-bottom: 0.7em;*/
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 28px;
   font-weight: 400;
   font-style: normal;
@@ -637,12 +637,12 @@ h6, .h6 {
 .product-name h1,
 .product-name .h1 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: #636363;
   border-bottom: 1px solid #ededed;
   padding-bottom: 3px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   text-transform: uppercase;
 }
 
@@ -1144,7 +1144,7 @@ a.button:hover {
 .breadcrumbs li {
   float: left;
   font-size: 12px;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -2085,7 +2085,7 @@ span.weee {
   border-bottom: 1px solid #cccccc;
   border-top: 1px solid #cccccc;
   background: #f4f4f4;
-  padding: 5px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
 }
 .toolbar:after {
   content: '';
@@ -2103,10 +2103,11 @@ span.weee {
 
 .toolbar,
 .pager {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #636363;
   line-height: 30px;
   font-size: 12px;
+    margin:0;
 }
 
 .toolbar label,
@@ -2116,8 +2117,8 @@ span.weee {
 }
 
 .sorter {
-  float: left;
-  margin-bottom: 5px;
+  float: right;
+  /*margin-bottom: 5px;*/
 }
 .sorter label {
   float: left;
@@ -2176,7 +2177,7 @@ span.weee {
 }
 
 .pager {
-  float: right;
+  float: left;
   overflow: hidden;
 }
 .pager > .count-container {
@@ -2202,7 +2203,7 @@ span.weee {
 .pager .amount,
 .pager .limiter,
 .pager .pages {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .pages {
@@ -2348,7 +2349,7 @@ span.weee {
   .col2-right-layout .pager,
   .col3-layout .sorter,
   .col3-layout .pager {
-    width: 100%;
+    /*width: 100%;*/
   }
   .col2-left-layout .pager,
   .col2-right-layout .pager,
@@ -2563,7 +2564,7 @@ li.centinel-logos div.input-box img {
 label {
   display: inline-block;
   font-size: 13px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  /*font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;*/
   font-weight: 600;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2717,7 +2718,7 @@ input:-moz-placeholder {
 .radio {
   position: relative;
   top: -1px;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .checkbox + label,
@@ -4461,6 +4462,7 @@ a.skip-link {
 .category-title h1,
 body.catalogsearch-result-index .page-title h1 {
   border-bottom: none;
+    display: none;
 }
 
 .category-image {
@@ -5057,7 +5059,7 @@ ul.owl-theme li {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -5247,6 +5249,17 @@ ul.owl-theme li {
     text-decoration: none;
     background: #ececec;
   }
+
+
+   .category-title h1,
+    body.catalogsearch-result-index .page-title h1 {
+        display: block;
+   }
+
+    #ptech_multilayer_container {
+        margin-top: 0;
+    }
+
 }
 .block-layered-nav .currently .block-subtitle {
   display: block;
