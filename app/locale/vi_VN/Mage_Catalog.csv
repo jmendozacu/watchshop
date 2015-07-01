@@ -46,6 +46,7 @@
 "Add to Compare","So sánh"
 "Add to Wishlist","Lưu lại"
 "Additional Information","Thông tin kỹ thuật"
+"Description","Thương hiệu"
 "Alert Urls","Cảnh báo các URL"
 "All","Tất cả"
 "All Product Types","Tất cả các loại sản phẩm"
@@ -225,6 +226,7 @@
 "Date Subscribed","Ngày đăng ký"
 "Datetime","Ngày giờ"
 "Decimal","Số thập phân"
+
 "Declare attribute value saving scope","Khai báo phạm vi lưu thuộc tính giá trị"
 "Default ""What's This"" Text Message","Mặc định ""Đây là cái gì"" Tin nhắn "
 "Default Popup Text Message","Mặc định tin nhắn Popup"
