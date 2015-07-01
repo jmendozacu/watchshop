@@ -5147,6 +5147,45 @@ ul.owl-theme li {
   color: #a0a0a0;
 }
 
+.block-layered-nav .block-content > dl > dd.color,
+.block-layered-nav .block-content > dl > dd.chat_lieu_day,
+.block-layered-nav .block-content > dl > dd.chat_lieu_vo,
+.block-layered-nav .block-content > dl > dd.style {
+    display: none;
+}
+
+.block-layered-nav .block-content > dl > dt.color,
+.block-layered-nav .block-content > dl > dt.chat_lieu_day,
+.block-layered-nav .block-content > dl > dt.chat_lieu_vo,
+.block-layered-nav .block-content > dl > dt.style {
+    cursor: pointer;
+    border-bottom-width: 0;
+}
+
+.block-layered-nav .block-content > dl > dt.last {
+    border-bottom-width: 1px;
+}
+
+.block-layered-nav .block-content.accordion-open > dl > dd.current {
+    display: block;
+}
+
+.block-layered-nav .block-content.accordion-open > dl > dt.current {
+    border-bottom-width: 1px;
+}
+
+.block-layered-nav .block-content > dl > dt:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #3399cc;
+    border-right: none;
+}
+
 @media only screen and (min-width: 771px) {
   .block-layered-nav .block-content > dl > dt {
     padding-left: 10px;
@@ -5292,7 +5331,7 @@ ul.owl-theme li {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -6215,8 +6254,8 @@ ul.owl-theme li {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;

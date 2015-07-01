@@ -31,14 +31,19 @@
  * @see Mage_Catalog_Block_Layer_Filter
  */
 ?>
-
+<!--            <a href="--><?php //echo $this->urlEscape($_item->getUrl()) ?><!--">-->
+<!--                --><?php //echo $_item->getLabel() ?>
+<!--                --><?php //if ($this->shouldDisplayProductCount()): ?>
+<!--                <span class="count">(--><?php //echo $_item->getCount() ?><!--)</span>-->
+<!--                --><?php //endif; ?>
+<!--            </a>-->
 <ol>
 <?php foreach ($this->getItems() as $_item): ?>
     <li>
         <?php if ($_item->getCount() > 0): ?>
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" value="">
+                    <input type="checkbox" name="<?php echo $_item->getFilter()->getRequestVar();?>" value="">
                     <?php echo $_item->getLabel() ?>
                     <?php if ($this->shouldDisplayProductCount()): ?>
                         <span class="count">(<?php echo $_item->getCount() ?>)</span>
