@@ -1802,6 +1802,12 @@ a.button:hover {
 .cms-home .price-box .special-price .price-label {
   display: none;
 }
+
+.category-thuong-hieu .price-box .old-price .price-label,
+.category-thuong-hieu .price-box .special-price .price-label {
+    /*display: none;*/
+}
+
 .price-box .old-price .price,
 .price-box .special-price .price {
   display: inline-block;

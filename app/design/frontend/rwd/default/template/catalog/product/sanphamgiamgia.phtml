@@ -7,7 +7,7 @@
 <?php else: ?>
 <h2><?php echo $this->__('Sản phẩm giảm giá') ?></h2>
 <div class="category-products">
-    <?php //echo $this->getToolbarHtml() ?>
+    <?php echo $this->getToolbarHtml() ?>
     <?php // List mode ?>
     <?php if($this->getMode()!='grid'): ?>
     <?php $_iterator = 0; ?>
@@ -69,15 +69,18 @@
 
 	foreach ($_productCollection as $_product):
 
-	$specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
-	if ($specialprice){
-		
+	$specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice();
+
+        if ($specialprice){
+
 	$phrase1 = '<div class="label-sale">
 	<a href="'. $_product->getProductUrl().'" title="'.$this->htmlEscape($_product->getName()).'">
 		<img src="'.$this->getSkinUrl('images/').'label-sale.png" />
 	</a>
-	</div>'; 
-	} 
+	</div>';
+	}else{
+            $phrase1 = "";
+        }
 	?>
 	<?php 
 	$phrase2 = 

@@ -57,6 +57,18 @@
                 break;
             }
 		$str .= '<li class="item">';
+            $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice();
+            if ($specialprice){
+
+                $phrase1 = '<div class="label-sale">
+	<a href="'. $_product->getProductUrl().'" title="'.$this->htmlEscape($_product->getName()).'">
+		<img src="'.$this->getSkinUrl('images/').'label-sale.png" />
+	</a>
+	</div>';
+            }else{
+                $phrase1 = "";
+            }
+        $str .= $phrase1;
         $str .= '<a href="'.$this->getBaseUrl().$_product['url_path'].'" title="'.$this->htmlEscape($_product->getName()).'" class="product-image">';
 		$str .= '<img src="'.$this->helper('catalog/image')->init($_product, 'small_image')->resize(($this->getImageHeight()) ? $this->getImageHeight() : 160,($this->getImageWidth()) ? $this->getImageWidth() : 160).'" alt="'.$this->htmlEscape($_product['name']).'"/></a>';
 		$str .= '<h3 class="product-name"><a href="'.$this->getBaseUrl().$_product['url_path'].'" title="'.$this->htmlEscape($_product['name']).'">'.$this->htmlEscape($_product['name']).'</a></h3>';
