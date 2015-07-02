@@ -7,3 +7,4 @@ var/report/*
 .project
 .buildpath
 app/etc/local.xml
+media/*

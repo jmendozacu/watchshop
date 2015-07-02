@@ -1802,6 +1802,15 @@ a.button:hover {
 .cms-home .price-box .special-price .price-label {
   display: none;
 }
+.my-price{
+    text-align: left;
+}
+
+.my-price .price-box .old-price .price-label,
+.my-price .price-box .special-price .price-label {
+    display: none;
+}
+
 .price-box .old-price .price,
 .price-box .special-price .price {
   display: inline-block;
@@ -4701,6 +4710,10 @@ ul.owl-theme li {
     border: 1px gray solid;
     margin: 5%;
     position: relative;
+}
+
+ul.products-grid--max-4-col li{
+    border: 1px gray solid;
 }
 
 .products-grid .label-sale {
