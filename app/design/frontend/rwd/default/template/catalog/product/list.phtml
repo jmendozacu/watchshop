@@ -133,7 +133,7 @@
                     </div>
                 <?php } ?>
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
-                    <?php $_imgSize = 160; ?>
+                    <?php $_imgSize = 210; ?>
                     <img id="product-collection-image-<?php echo $_product->getId(); ?>"
                          src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>"
                          alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
@@ -151,8 +151,10 @@
                         }
                     }
                     ?>
-                <div class="class="item-bottom">
-                    <?php echo $this->getPriceHtml($_product, true) ?>
+                <div class="item-bottom">
+                    <div class = "my-price">
+                        <?php echo $this->getPriceHtml($_product, true) ?>
+                    </div>
                     <?php //if($_product->getRatingSummary()): ?>
                     <?php //echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                     <?php //endif; ?>
