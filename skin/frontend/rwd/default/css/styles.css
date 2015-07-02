@@ -2551,6 +2551,7 @@ form .legend {
  */
 .input-box {
   padding-top: 2px;
+    position: relative;
 }
 .input-box:after {
   content: '';
@@ -2752,6 +2753,8 @@ p.required,
   margin: 5px 0 0;
   color: #df280a;
   font-size: 13px;
+    position: absolute;
+    bottom: -50px;
 }
 
 /* ============================================ *
