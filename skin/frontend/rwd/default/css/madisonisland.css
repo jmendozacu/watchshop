@@ -371,3 +371,50 @@ body .promos > li {
 #ptech_multilayer_container {
     margin-top: 27px;
 }
+
+
+/*back ground home page*/
+.col1-layout .col-main{
+    /*background: url("../images/1.jpg") repeat center top;*/
+}
+
+
+/*My style ------------------------------------------------------------------*/
+/*Lable slide product*/
+
+.std ul.heading-slide-product{
+    margin-bottom: 0px;
+}
+
+.std ul.heading-slide-product li{
+    display: inline-block;
+    margin-left: 10.25px;
+
+}
+
+.heading-slide-product h2{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.heading-slide-product a{
+    text-decoration: underline;
+}
+
+/*open-close left-menu*/
+/*dt.style:after*/
+/*{*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*display: block;*/
+    /*border-top: 5px solid transparent;*/
+    /*border-bottom: 5px solid transparent;*/
+    /*border-left: 5px solid #cccccc;*/
+    /*border-right: none;*/
+    /*top: 50%;*/
+    /*left: 10px;*/
+    /*right: auto;*/
+    /*margin-top: -5px;*/
+/*}*/

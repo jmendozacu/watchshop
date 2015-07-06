@@ -37,7 +37,8 @@
         <div class="sorter">
 
             <div class="sort-by">
-                <label><?php echo $this->__('Sort By Price') ?></label>
+                <label class = "visible-lg visible-md visible-sm"><?php echo $this->__('Sort By Price') ?></label>
+                <label class = "visible-xs"><?php echo $this->__('Price') ?></label>
                 <select onchange='setLocation(this.value)' title="<?php echo $this->__('Sort By Price') ?>">
                         <option value="<?php echo $this->getOrderUrl('price', 'asc') ?>"<?php if($_GET['dir'] == 'asc'): ?> selected="selected"<?php endif; ?>>
                             <?php echo $this->__('Sort By Price ASC') ?>

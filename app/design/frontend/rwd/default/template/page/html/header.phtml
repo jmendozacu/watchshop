@@ -36,24 +36,23 @@
     <div class="page-header-container">
 		<div class = "visible-desktop">
 			<div class="header-container">
-				<div class="quick-access-container">
-					<div class="quick-access clearer">
-                        <div class="header-line">
-                            <ul class="boilerplate">
-                                <li>
-                                    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-1')->toHtml() ?>
-                                </li>
-                                <li>
-                                    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-2')->toHtml() ?>
-                                </li>
-                                <li>
-                                    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-3')->toHtml() ?>
-                                </li>
-                            </ul>
-                            <?php echo $this->getChildHtml('topLinks') ?>
-                        </div>
-					</div>
-				</div>
+
+                <div class="header-line navbar-fixed-top clearer">
+                    <ul class="boilerplate">
+                        <li>
+                            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-1')->toHtml() ?>
+                        </li>
+                        <li>
+                            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-2')->toHtml() ?>
+                        </li>
+                        <li>
+                            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-line-3')->toHtml() ?>
+                        </li>
+                    </ul>
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                </div>
+
+
                 <!-- Second line header -->
 				<div class="header-top">    	
                     <div class="header clearer row">
