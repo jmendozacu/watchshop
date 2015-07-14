@@ -881,15 +881,15 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .button,
 .sidebar .actions .button,
 .button.button-secondary {
-  background: #dddddd;
-  color: #636363;
+  background: #ae0000;
+  color: #ffffff;
   padding: 7px 15px;
 }
 .cart .buttons-set .button:hover,
 .cart-table .button:hover,
 .sidebar .actions .button:hover,
 .button.button-secondary:hover {
-  background: #d0d0d0;
+  background: #000000;
   cursor: pointer;
 }
 .cart .buttons-set .button:active,
@@ -2756,6 +2756,7 @@ p.required,
     position: absolute;
     bottom: -50px;
 }
+
 
 /* ============================================ *
  * Form List
@@ -6623,7 +6624,7 @@ ul.products-grid--max-4-col li{
  * ============================================ */
 .cart-table {
   float: left;
-  width: 60%;
+  width: 100%;
 }
 
 .cart .button {
@@ -6849,6 +6850,7 @@ ul.products-grid--max-4-col li{
   padding: 10px 5px;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
+
 .cart-table .product-cart-info,
 .cart-table .product-cart-actions {
   padding-left: 15px;
@@ -6864,6 +6866,7 @@ ul.products-grid--max-4-col li{
   display: table;
   clear: both;
 }
+
 .cart-table span.or {
   font-size: 9px;
   padding: 0 5px;
@@ -6871,10 +6874,15 @@ ul.products-grid--max-4-col li{
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .cart-table .product-cart-image .cart-links,
-.cart-table .product-cart-info .btn-remove,
 .cart-table .product-cart-actions .button {
   display: none;
 }
+
+.cart-table .product-cart-info .btn-remove{
+
+}
+
+
 .cart-table .product-cart-image {
   padding-left: 0;
   padding-right: 0;
@@ -6898,9 +6906,13 @@ ul.products-grid--max-4-col li{
 .cart-table .btn-empty {
   float: left;
 }
-.cart-table .product-cart-total,
+
 .cart-table .product-cart-price {
   text-align: center;
+}
+
+.cart-table .product-cart-total{
+    color: #ae0000;
 }
 .cart-table .cart-tax-total {
   position: relative;
@@ -6964,7 +6976,9 @@ ul.products-grid--max-4-col li{
 .cart-table .item-options {
   padding-left: 15px;
 }
-
+.cart-table tfoot .tfoot-total span{
+    color: #ae0000;
+}
 @media only screen and (max-width: 770px) {
   .cart-table th {
     font-size: 12px;
@@ -7064,6 +7078,15 @@ ul.products-grid--max-4-col li{
     float: right;
     width: 75%;
   }
+    .cart-table .tfoot-title{
+        float: left;
+        width: 50%;
+    }
+    .cart-table .tfoot-data{
+        float: right;
+        width: 50%;
+    }
+
   .cart-table .product-cart-actions,
   .cart-table .product-cart-price {
     padding-bottom: 0;

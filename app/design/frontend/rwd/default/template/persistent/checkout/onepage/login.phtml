@@ -35,15 +35,15 @@
 <?php echo $this->getChildHtml('login_before') ?>
 <div class="col2-set<?php if (!$this->helper('customer')->isRegistrationAllowed() && !$this->getQuote()->isAllowedGuestCheckout()) echo ' login-only' ?>">
     <div class="col-1">
-        <h3>
-            <?php if( $this->getQuote()->isAllowedGuestCheckout() && $this->helper('customer')->isRegistrationAllowed() ): ?>
-                <?php echo $this->__('Checkout as a Guest or Register') ?>
-            <?php elseif ( $this->getQuote()->isAllowedGuestCheckout() && !$this->helper('customer')->isRegistrationAllowed() ): ?>
-                <?php echo $this->__('Checkout as a Guest') ?>
-            <?php else: ?>
-                <?php echo $this->__('Register to Create an Account') ?>
-            <?php endif; ?>
-        </h3>
+<!--        <h3>-->
+<!--            --><?php //if( $this->getQuote()->isAllowedGuestCheckout() && $this->helper('customer')->isRegistrationAllowed() ): ?>
+<!--                --><?php //echo $this->__('Checkout as a Guest or Register') ?>
+<!--            --><?php //elseif ( $this->getQuote()->isAllowedGuestCheckout() && !$this->helper('customer')->isRegistrationAllowed() ): ?>
+<!--                --><?php //echo $this->__('Checkout as a Guest') ?>
+<!--            --><?php //else: ?>
+<!--                --><?php //echo $this->__('Register to Create an Account') ?>
+<!--            --><?php //endif; ?>
+<!--        </h3>-->
         <?php if( !$this->getQuote()->isAllowedGuestCheckout() && $this->helper('customer')->isRegistrationAllowed() ): ?>
             <p class="description"><?php echo $this->__('Register and save time!') ?></strong><br />
                 <?php echo $this->__('Register with us for future convenience:') ?></p>
@@ -90,7 +90,7 @@
         <form id="login-form" action="<?php echo $this->getPostAction() ?>" method="post">
         <div class="fieldset">
             <?php echo $this->getBlockHtml('formkey'); ?>
-            <p class="description"><?php echo $this->__('Sign in to speed up your checkout process') ?></p>
+<!--            <p class="description">--><?php //echo $this->__('Sign in to speed up your checkout process') ?><!--</p>-->
             <p class="required"><?php echo $this->__('* Required Fields') ?></p>
             <ul class="form-list">
                 <li>

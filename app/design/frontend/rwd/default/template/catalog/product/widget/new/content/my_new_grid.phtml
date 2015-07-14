@@ -27,7 +27,7 @@
 <?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
 <ul class = "heading-slide-product">
     <li><h2><?php echo $this->__('New Products') ?></h2></li>
-    <li><a href="#"> Xem tất cả </a></li>
+    <li><a href="<?php echo $this->getUrl('san-pham/san-pham-moi'); ?>"> Xem tất cả </a></li>
 </ul>
 
 <div class="category-products">
