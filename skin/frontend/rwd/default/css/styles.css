@@ -5221,18 +5221,6 @@ ul.products-grid--max-4-col li{
     border-bottom-width: 1px;
 }
 
-.block-layered-nav .block-content > dl > dt:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    display: block;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid #3399cc;
-    border-right: none;
-}
-
 @media only screen and (min-width: 771px) {
   .block-layered-nav .block-content > dl > dt {
     padding-left: 10px;
