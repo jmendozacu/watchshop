@@ -607,8 +607,8 @@ h6, .h6 {
 
 .availability {
   margin-bottom: 0;
-  font-size: 13px;
-  text-transform: uppercase;
+  /*font-size: 13px;*/
+  /*text-transform: uppercase;*/
 }
 
 .availability .label {
@@ -616,7 +616,7 @@ h6, .h6 {
 }
 
 .availability.in-stock {
-  color: #11b400;
+  color: #337ab7;
 }
 
 .availability.available-soon,
@@ -889,7 +889,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .button:hover,
 .sidebar .actions .button:hover,
 .button.button-secondary:hover {
-  background: #000000;
+  background:#ae0000;
   cursor: pointer;
 }
 .cart .buttons-set .button:active,
@@ -914,7 +914,6 @@ body:not(.customer-account) .block:first-child .block-title {
 
 /* Primary Buttons */
 .button,
-.cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
 .footer .button {
   background: #ae0000;
@@ -931,6 +930,23 @@ body:not(.customer-account) .block:first-child .block-title {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+.cart-table .product-cart-actions .btn-update{
+    background: none;
+    display: inline-block;
+    /*padding: 7px 15px;*/
+    border: 0;
+    color:#337ab7;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    line-height: 19px;
+    text-align: center;
+    text-transform: none;
+    text-decoration: underline;
+    vertical-align: middle;
+    white-space: nowrap;}
+
 .button:hover,
 .cart-table .product-cart-actions .button:hover,
 #co-shipping-method-form .buttons-set .button:hover,
@@ -938,6 +954,11 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #636363;
   cursor: pointer;
 }
+
+.cart-table .product-cart-actions .btn-update:hover{
+    background: none;
+}
+
 .button:active,
 .cart-table .product-cart-actions .button:active,
 #co-shipping-method-form .buttons-set .button:active,
@@ -945,6 +966,8 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #297aa3;
   color: #FFFFFF;
 }
+
+
 .button:focus,
 .cart-table .product-cart-actions .button:focus,
 #co-shipping-method-form .buttons-set .button:focus,
@@ -976,7 +999,7 @@ a.button:hover {
 }
 
 .button2 {
-  border: 0;
+  /*border: 0;*/
   padding: 0 5px;
   margin: 0;
   background: transparent;
@@ -992,10 +1015,10 @@ a.button:hover {
 .button2 span span {
   line-height: 30px;
   height: 30px;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   text-transform: uppercase;
   display: inline-block;
-  color: #3399cc;
+  color: #000000;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 .button2 span:hover,
@@ -2926,7 +2949,7 @@ form .form-instructions {
 
 .data-table tbody td,
 .data-table tfoot td {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  /*font-family: Georgia, Times, "Times New Roman", serif;*/
 }
 
 .data-table tfoot tr {
@@ -6825,7 +6848,7 @@ ul.products-grid--max-4-col li{
   }
 }
 @media only screen and (max-width: 599px) {
-  .btn-checkout {
+  .btn-checkout,.btn-continue {
     width: 100%;
   }
 }
@@ -6860,6 +6883,7 @@ ul.products-grid--max-4-col li{
 }
 .cart-table tfoot tr {
   background: none;
+    border: none;
 }
 .cart-table tfoot tr > td:after {
   content: '';
@@ -6909,6 +6933,14 @@ ul.products-grid--max-4-col li{
 
 .cart-table .product-cart-price {
   text-align: center;
+}
+
+.cart-table .product-cart-price ul>li.price{
+    color: #ae0000;
+}
+.cart-table .product-cart-price ul>li.original-price{
+    color: #a0a0a0;
+    text-decoration: line-through;
 }
 
 .cart-table .product-cart-total{
@@ -7133,7 +7165,7 @@ ul.products-grid--max-4-col li{
     float: right;
   }
   .cart-table .cart-footer-actions .btn-continue {
-    float: left;
+    float: right;
   }
   .cart-table .cart-footer-actions .btn-update,
   .cart-table .cart-footer-actions span.or {
