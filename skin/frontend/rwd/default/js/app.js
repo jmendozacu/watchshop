@@ -1054,6 +1054,19 @@ $j(document).ready(function () {
         });
     }
 
+    // Filter product
+    // =============================
+
+    if($j('.block-layered-nav').length){
+        $j('.block-layered-nav').find('input[type=checkbox]:not(:disabled)').each(function(){
+            $j(this).change(function(){
+                if(this.checked){
+                    window.location.href = $j(this).val();
+                }
+            });
+        });
+    }
+
 
     // ==============================================
     // Product Listing - Align action buttons/links
