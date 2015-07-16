@@ -26,6 +26,8 @@
 ?>
 <?php
 $_item = $this->getItem();
+//$_helper = $this->helper('catalog/output');
+//$_product = $this->getProduct();
 $isVisibleProduct = $_item->getProduct()->isVisibleInSiteVisibility();
 $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage_Catalog_Model_Product_Attribute_Source_Msrp_Type::TYPE_BEFORE_ORDER_CONFIRM);
 ?>
@@ -38,69 +40,92 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         <?php if ($this->hasProductUrl()):?>
             </a>
         <?php endif;?>
-
-        <ul class="cart-links">
-            <?php if ($isVisibleProduct): ?>
-                <li>
-                    <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item parameters') ?>"><?php echo $this->__('Edit') ?></a>
-                </li>
-            <?php endif ?>
-
-            <?php if ($this->helper('wishlist')->isAllowInCart() && $isVisibleProduct) : ?>
-                <li>
-                    <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>
-                </li>
-            <?php endif ?>
-        </ul>
     </td>
 
     <td class="product-cart-info">
+        <ul>
+            <li>
+                <h2 class="product-name">
+                    <?php if ($this->hasProductUrl()):?>
+                        <a href="<?php echo $this->getProductUrl() ?>"><?php echo $this->escapeHtml($this->getProductName()) ?></a>
+                    <?php else: ?>
+                        <?php echo $this->escapeHtml($this->getProductName()) ?>
+                    <?php endif; ?>
+                </h2>
+            </li>
+            <li>
 
-        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Remove Item') ?>" class="btn-remove btn-remove2"><?php echo $this->__('Remove Item') ?></a>
+                <?php $_product = $_item->getProduct(); ?>
 
-        <h2 class="product-name">
-        <?php if ($this->hasProductUrl()):?>
-            <a href="<?php echo $this->getProductUrl() ?>"><?php echo $this->escapeHtml($this->getProductName()) ?></a>
-        <?php else: ?>
-            <?php echo $this->escapeHtml($this->getProductName()) ?>
-        <?php endif; ?>
-        </h2>
+                    <?php if ($_product->isAvailable()): ?>
+                        <p class="availability in-stock">
+<!--                            <span class="label">--><?php //echo $this->helper('catalog')->__('Availability:') ?><!--</span>-->
+                            <span class="value"><?php echo $this->helper('catalog')->__('In stock') ?></span>
+                        </p>
+                    <?php else: ?>
+                        <p class="availability out-of-stock">
+<!--                            <span class="label">--><?php //echo $this->helper('catalog')->__('Availability:') ?><!--</span>-->
+                            <span class="value"><?php echo $this->helper('catalog')->__('Out of stock') ?></span>
+                        </p>
+                    <?php endif; ?>
 
-        <div class="product-cart-sku">
-            <span class="label"><?php echo $this->__('SKU'); ?>:</span> <?php echo $this->escapeHtml($_item->getSku()); ?>
-        </div>
+            </li>
+            <li>
+                <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Remove Item') ?>" class=""><?php echo $this->__('Remove Item') ?></a>
+            </li>
+        </ul>
+<!--        <div class="product-cart-sku">-->
+<!--            <span class="label">--><?php //echo $this->__('SKU'); ?><!--:</span> --><?php //echo $this->escapeHtml($_item->getSku()); ?>
+<!--        </div>-->
 
-        <?php if ($_options = $this->getOptionList()):?>
-        <dl class="item-options">
-            <?php foreach ($_options as $_option) : ?>
-            <?php $_formatedOptionValue = $this->getFormatedOptionValue($_option) ?>
-                <dt><?php echo $this->escapeHtml($_option['label']) ?></dt>
-                <dd<?php if (isset($_formatedOptionValue['full_view'])): ?> class="truncated"<?php endif; ?>><?php echo $_formatedOptionValue['value'] ?>
-                <?php if (isset($_formatedOptionValue['full_view'])): ?>
-                <div class="truncated_full_value">
-                    <dl class="item-options">
-                        <dt><?php echo $this->escapeHtml($_option['label']) ?></dt>
-                        <dd><?php echo $_formatedOptionValue['full_view'] ?></dd>
-                    </dl>
-                </div>
-                <?php endif; ?>
-            </dd>
-            <?php endforeach; ?>
-        </dl>
-        <?php endif;?>
+<!--        --><?php //if ($_options = $this->getOptionList()):?>
+<!--        <dl class="item-options">-->
+<!--            --><?php //foreach ($_options as $_option) : ?>
+<!--            --><?php //$_formatedOptionValue = $this->getFormatedOptionValue($_option) ?>
+<!--                <dt>--><?php //echo $this->escapeHtml($_option['label']) ?><!--</dt>-->
+<!--                <dd--><?php //if (isset($_formatedOptionValue['full_view'])): ?><!-- class="truncated"--><?php //endif; ?><!--><?php //echo $_formatedOptionValue['value'] ?>
+<!--                --><?php //if (isset($_formatedOptionValue['full_view'])): ?>
+<!--                <div class="truncated_full_value">-->
+<!--                    <dl class="item-options">-->
+<!--                        <dt>--><?php //echo $this->escapeHtml($_option['label']) ?><!--</dt>-->
+<!--                        <dd>--><?php //echo $_formatedOptionValue['full_view'] ?><!--</dd>-->
+<!--                    </dl>-->
+<!--                </div>-->
+<!--                --><?php //endif; ?>
+<!--            </dd>-->
+<!--            --><?php //endforeach; ?>
+<!--        </dl>-->
+<!--        --><?php //endif;?>
 
-        <?php if ($messages = $this->getMessages()): ?>
-        <?php foreach ($messages as $message): ?>
-            <p class="item-msg <?php echo $message['type'] ?>">
-                * <?php echo $this->escapeHtml($message['text']) ?>
-            </p>
-        <?php endforeach; ?>
-        <?php endif; ?>
+<!--        --><?php //if ($messages = $this->getMessages()): ?>
+<!--        --><?php //foreach ($messages as $message): ?>
+<!--            <p class="item-msg --><?php //echo $message['type'] ?><!--">-->
+<!--                * --><?php //echo $this->escapeHtml($message['text']) ?>
+<!--            </p>-->
+<!--        --><?php //endforeach; ?>
+<!--        --><?php //endif; ?>
+<!---->
+<!--        --><?php //$addInfoBlock = $this->getProductAdditionalInformationBlock(); ?>
+<!--        --><?php //if ($addInfoBlock): ?>
+<!--            --><?php //echo $addInfoBlock->setItem($_item)->toHtml() ?>
+<!--        --><?php //endif;?>
 
-        <?php $addInfoBlock = $this->getProductAdditionalInformationBlock(); ?>
-        <?php if ($addInfoBlock): ?>
-            <?php echo $addInfoBlock->setItem($_item)->toHtml() ?>
-        <?php endif;?>
+<!--        <ul class="cart-links">-->
+<!--            --><?php //if ($isVisibleProduct): ?>
+<!--                <li>-->
+<!--                    <a href="--><?php //echo $this->getConfigureUrl() ?><!--" title="--><?php //echo $this->__('Edit item parameters') ?><!--">--><?php //echo $this->__('Edit') ?><!--</a>-->
+<!--                </li>-->
+<!--            --><?php //endif ?>
+<!---->
+<!--            --><?php //if ($this->helper('wishlist')->isAllowInCart() && $isVisibleProduct) : ?>
+<!--                <li>-->
+<!--        <a href="--><?php //echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?><!--" class="link-wishlist use-ajax">--><?php //echo $this->__('Move to wishlist'); ?><!--</a>&nbsp;-->
+<!--                </li>-->
+<!--            --><?php //endif ?>
+<!--        </ul>-->
+<!---->
+<!--        <a href="--><?php //echo $this->getDeleteUrl() ?><!--" title="--><?php //echo $this->__('Remove Item') ?><!--" class="">--><?php //echo $this->__('Remove Item') ?><!--</a>-->
 
     </td>
 
@@ -130,7 +155,58 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
                 <?php if (Mage::helper('weee')->typeOfDisplay($_item, array(0, 1, 4), 'sales') && $_item->getWeeeTaxAppliedAmount()): ?>
                     <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()+$_item->getWeeeTaxAppliedAmount()+$_item->getWeeeTaxDisposition()); ?>
                 <?php else: ?>
-                    <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()) ?>
+                    <?php
+                        $price_special = $_item->getProduct()->getFinalPrice();
+                        $price_original = $_item->getProduct()->getPrice();
+                        if($price_special==$price_original):{?>
+                            <ul>
+                                <li class = "price">
+                                    <?php echo $this->helper('checkout')->formatPrice($price_original);?>
+                                </li>
+                            </ul>
+<!--                            <div class = "price-box ">-->
+<!--                                <p class = "special-price">-->
+<!--                                    <span class="price">-->
+<!--                                        --><?php //echo $this->helper('checkout')->formatPrice($price_original);?>
+<!--                                    <span>-->
+<!--                                </p>-->
+<!--                            </div>-->
+                        <?php }
+                        else:
+                        {?>
+                            <ul>
+                                <li class = "price">
+                                    <?php echo $this->helper('checkout')->formatPrice($price_special);?>
+                                </li>
+                                <li class = "original-price">
+                                    <?php echo $this->helper('checkout')->formatPrice($price_original);?>
+                                </li>
+                                <li>
+                                    <?php
+                                    $discount = round(($price_original-$price_special)*100/$price_original);
+                                    echo "Sale off ".$discount."%";
+                                    ?>
+                                </li>
+                            </ul>
+<!--                            <div class = "price-box ">-->
+<!--                                <p class = "special-price">-->
+<!--                                    <span class="price">-->
+<!--                                        --><?php //echo $this->helper('checkout')->formatPrice($price_special);?>
+<!--                                        <span>-->
+<!--                                </p>-->
+<!--                                <p class = "old-price">-->
+<!--                                    <span class="price">-->
+<!--                                        --><?php //echo $this->helper('checkout')->formatPrice($price_original);?>
+<!--                                    </span>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!---->
+<!--                            --><?php
+//                                $discount = round(($price_original-$price_special)*100/$price_original);
+//                                echo "Sale off ".$discount."%";
+//                            ?>
+                        <?php }endif;
+                        ?>
                 <?php endif; ?>
 
             </span>
@@ -161,6 +237,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
             <?php endif; ?>
         </td>
         <?php endif; ?><!-- inclusive price starts here -->
+
         <?php if ($this->helper('tax')->displayCartPriceInclTax() || $this->helper('tax')->displayCartBothPrices()): ?>
         <td class="product-cart-price" data-rwd-label="<?php echo $this->__('Price'); ?>" data-rwd-tax-label="<?php echo $this->__('Incl. Tax'); ?>">
             <?php $_incl = $this->helper('checkout')->getPriceInclTax($_item); ?>
@@ -204,28 +281,12 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         </td>
         <?php endif; ?>
     <?php endif; ?>
+
     <td class="product-cart-actions" data-rwd-label="<?php echo $this->__('Qty'); ?>">
         <input type="text" pattern="\d*" name="cart[<?php echo $_item->getId() ?>][qty]" value="<?php echo $this->getQty() ?>" size="4" title="<?php echo $this->__('Qty') ?>" class="input-text qty" maxlength="12" />
-
+        </br>
         <button type="submit" name="update_cart_action" value="update_qty" title="<?php echo $this->__('Update'); ?>" class="button btn-update"><span><span><?php echo $this->__('Update'); ?></span></span>
         </button>
-
-        <ul class="cart-links">
-            <?php if ($isVisibleProduct): ?>
-                <li>
-                    <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item parameters') ?>"><?php echo $this->__('Edit') ?></a>
-                </li>
-            <?php endif ?>
-
-            <?php if ($this->helper('wishlist')->isAllowInCart()) : ?>
-            <li>
-                <?php if ($isVisibleProduct): ?>
-                    <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>
-                <?php endif ?>
-            </li>
-            <?php endif ?>
-        </ul>
-
     </td>
 
     <!--Sub total starts here -->
@@ -322,9 +383,6 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         <?php endif; ?>
     </td>
     <?php endif; ?>
-    <td class="a-center product-cart-remove">
-        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Remove Item') ?>" class="btn-remove btn-remove2"><?php echo $this->__('Remove Item') ?></a>
-    </td>
 </tr>
 
 

@@ -5,9 +5,14 @@
 <?php if(!$_productCollection->count()): ?>
 <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
 <?php else: ?>
-<h2><?php echo $this->__('Sản phẩm giảm giá') ?></h2>
+
+<ul class = "heading-slide-product">
+    <li><h2><?php echo $this->__('Sản phẩm khuyến mãi') ?></h2></li>
+    <li><a href="<?php echo $this->getUrl('san-pham/san-pham-khuyen-mai'); ?>"> Xem tất cả </a></li>
+</ul>
+
 <div class="category-products">
-    <?php echo $this->getToolbarHtml() ?>
+    <?php //echo $this->getToolbarHtml() ?>
     <?php // List mode ?>
     <?php if($this->getMode()!='grid'): ?>
     <?php $_iterator = 0; ?>
