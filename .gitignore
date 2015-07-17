@@ -6,5 +6,5 @@ var/report/*
 .idea/*
 .project
 .buildpath
-app/etc/*.xml
+app/etc/local.xml
 media/*
