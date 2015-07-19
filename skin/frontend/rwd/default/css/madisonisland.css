@@ -401,6 +401,30 @@ body .promos > li {
     text-decoration: underline;
 }
 
+.checkout-review-table-wrapper-right{
+    margin-top: 26px;
+    border: 1px solid #cccccc;
+}
+.checkout-review-table-wrapper-right .title{
+    height: 42px;
+    border-bottom: 1px solid #cccccc;
+    padding: 11px 10px 11px 10px;
+    background-color: rgb(244, 244, 244);
+}
+.checkout-review-table-wrapper-right .title1{
+    height: 42px;
+    padding: 11px 10px 11px 10px;
+
+}
+
+.checkout-review-table-wrapper-right .title a{
+    float:right;
+}
+
+#checkout-progress-wrapper{
+    padding-top: 20px;
+}
+
 /*open-close left-menu*/
 /*dt.style:after*/
 /*{*/
