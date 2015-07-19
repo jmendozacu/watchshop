@@ -184,7 +184,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
                                 <li>
                                     <?php
                                     $discount = round(($price_original-$price_special)*100/$price_original);
-                                    echo "Sale off ".$discount."%";
+                                    echo $this->__('Sale off'). " ".$discount."%";
                                     ?>
                                 </li>
                             </ul>
