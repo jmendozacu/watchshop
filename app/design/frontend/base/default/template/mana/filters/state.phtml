@@ -26,6 +26,7 @@
         </div>
         <span><?php echo $this->__('Currently Shopping by:') ?></span>
     </div>
+    <div class="clear-all-filters">
     <ol>
     <?php foreach ($_filters as $_filter): ?>
     <?php if ($_html = $this->getValueHtml($_filter)) : ?>
@@ -38,8 +39,7 @@
     <?php endif; ?>
     <?php endforeach; ?>
     </ol>
-    <?php if (!Mage::helper('mana_core')->isMageVersionEqualOrGreater('1.7') && ($_parent = $this->getParentBlock()) /*&& $_parent->getShowInFilter() != 'above_products'*/) : ?>
     <div class="actions"><a href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a></div>
-    <?php endif; ?>
+    </div>
 </div>
 <?php endif; ?>

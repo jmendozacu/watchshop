@@ -19,27 +19,26 @@
 <?php foreach ($this->getItems() as $_item): ?>
     <li <?php if ($_item->getMShowSelected()): ?>class="m-selected-ln-item"<?php endif; ?>>
         <?php // MANA BEGIN ?>
-        <?php if ($_item->getMSelected()): ?>
-        	<span class="m-selected-filter-item"><?php echo $this->escapeHtml($_item->getLabel()) ?>
-        <?php else : ?>
-	        <?php if (!$this->getFilterOptions()->getDisableNoResultOptions() || $_item->getCount() > 0 || $_item->getMSelected()): ?>
-	        <a href="<?php echo $this->urlEscape($_item->getUrl()) ?>" title="<?php echo $this->escapeHtml($_item->getLabel()) ?>"><?php echo $this->escapeHtml($_item->getLabel()) ?>
-	        <?php else:  ?>
-	            <span><?php echo $this->escapeHtml($_item->getLabel()) ?>
-	        <?php endif; ?>
-        <?php endif; ?>
-        <?php // MANA END ?>
-        <?php if (Mage::getStoreConfigFlag('mana_filters/display/count')) : ?>
-            <span class="count">(<?php echo $_item->getCount() ?>)</span>
-        <?php endif; ?>
-        <?php if ($_item->getMSelected()): ?>
-        	</span>
-        <?php else : ?>
-	        <?php if (!$this->getFilterOptions()->getDisableNoResultOptions() || $_item->getCount() > 0 || $_item->getMSelected()): ?>
-                </a>
-	        <?php else: ?>
-            	</span>
-	        <?php endif; ?>
+        <?php if ($_item->getCount() > 0): ?>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="<?php echo $_item->getFilter()->getRequestVar();?>" data-text="<?php echo $_item->getFilter()->getRemoveUrl();?>" data-url="<?php echo $this->urlEscape($_item->getUrl())?>" <?php echo ($_item->getMSelected())?' checked':''?>>
+                <?php echo $_item->getLabel() ?>
+                <?php if ($this->shouldDisplayProductCount()): ?>
+                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                <?php endif; ?>
+            </label>
+        </div>
+        <?php else: ?>
+            <div class="checkbox disabled">
+                <label>
+                    <input type="checkbox" value="" disabled>
+                    <?php echo $_item->getLabel() ?>
+                    <?php if ($this->shouldDisplayProductCount()): ?>
+                        <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                    <?php endif; ?>
+                </label>
+            </div>
         <?php endif; ?>
     </li>
 <?php endforeach ?>

@@ -1060,9 +1060,15 @@ $j(document).ready(function () {
     if($j('.block-layered-nav').length){
         $j('.block-layered-nav').find('input[type=checkbox]:not(:disabled)').each(function(){
             $j(this).change(function(){
+                var url = '';
                 if(this.checked){
-                    window.location.href = $j(this).val();
+                     url = $j(this).attr('data-url');
+                } else if(this.checked == false){
+                    url = $j(this).attr('data-text');
+                } else {
+                    return;
                 }
+                window.location.href = url;
             });
         });
     }
