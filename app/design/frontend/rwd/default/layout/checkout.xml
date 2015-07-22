@@ -352,7 +352,7 @@ One page checkout main layout
         <reference name="right">
             <action method="unsetChildren"></action>
 
-            <block type="checkout/onepage_review_info" name="checkout_review_sidebar" output="toHtml" before="-" template="checkout/onepage/review/myinfo.phtml">
+            <block type="checkout/onepage_review_info" name="checkout_review_sidebar" before="-" template="checkout/onepage/review/myinfo.phtml">
                 <action method="addItemRender"><type>default</type><block>checkout/cart_item_renderer</block><template>checkout/onepage/review/myitem.phtml</template></action>
                 <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/onepage/review/myitem.phtml</template></action>
                 <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/onepage/review/myitem.phtml</template></action>

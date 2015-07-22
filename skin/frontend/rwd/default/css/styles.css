@@ -5128,6 +5128,13 @@ ul.products-grid--max-4-col li{
 /* ============================================ *
  * Layered Navigation
  * ============================================ */
+
+.block-layered-nav .block-title{
+    display: none;
+}
+.block-layered-nav .block-content{
+    margin-top: 0px;
+}
 .block-layered-nav .block-subtitle--filter {
   display: none;
   margin: 0;
@@ -8108,10 +8115,11 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   clear: both;
   -webkit-transform: translateZ(0px);
 }
-.configurable-swatch-list li {
+ul.configurable-swatch-list li {
   float: left;
   zoom: 1;
   margin: 0 0 0 3px;
+    border: 0px gray solid;
 }
 .products-grid .configurable-swatch-list li {
   display: inline-block;
