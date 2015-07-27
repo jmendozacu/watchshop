@@ -138,9 +138,9 @@
 
 
                             <ul class = "tfoot-total">
-                                <li><span><?php echo $this->helper('checkout')->formatPrice($this->helper('checkout/cart')->getQuote()->getGrandTotal()); //get total price?></span></li>
+                                <li><span><?php echo $this->helper('checkout')->formatPrice($this->helper('checkout/cart')->getQuote()->getSubtotal()); //get total price?></span></li>
                                 <li><a href="#">theo biểu phí</a></li>
-                                <li><span><?php echo $this->helper('checkout')->formatPrice($this->helper('checkout/cart')->getQuote()->getGrandTotal());?></span></li>
+                                <li><span><?php echo $this->helper('checkout')->formatPrice($this->helper('checkout/cart')->getQuote()->getSubtotal());?></span></li>
                             </ul>
                     <td>
                 </tr>

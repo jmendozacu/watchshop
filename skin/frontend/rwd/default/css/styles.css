@@ -4789,8 +4789,7 @@ ul.products-grid--max-4-col li{
     height: 65px;
 }
 
-.products-grid .btn-cart,
-.products-grid .btn-cart:hover {
+.products-grid .btn-cart {
     cursor: pointer;
     border: 1px solid #777;
     font: bold 11px/25px Arial, Helvetica, sans-serif;
@@ -4804,6 +4803,12 @@ ul.products-grid--max-4-col li{
     text-transform: uppercase;
     padding-right: 12px;
     padding-left: 12px;
+}
+
+.products-grid .btn-cart:hover{
+    background: #337ab7;
+    background-image: -moz-linear-gradient(top, #b5d1d4,#337ab7);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#B5D1D4),to(#337ab7));
 }
 
 /* Special price
