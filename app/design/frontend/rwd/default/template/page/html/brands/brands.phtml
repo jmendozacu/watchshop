@@ -5,14 +5,16 @@
         <li><a href="#"> Xem tất cả </a></li>
     </ul>
 
-    <div id="brands">
-        <div class="item"><img alt="Owl Image" src="<?php echo $this->getSkinUrl('images/dkshop/logo/titan-logo.jpg');?>" height="160" width="320" /></div>
-        <div class="item"><img alt="Owl Image" src="<?php echo $this->getSkinUrl('images/dkshop/logo/Tissot_logo_sport.jpg');?>" height="160" width="320" /></div>
-        <div class="item"><img alt="Owl Image" src="<?php echo $this->getSkinUrl('images/dkshop/logo/citizen.png');?>" height="160" width="320" /></div>
-        <div class="item"><img alt="Owl Image" src="<?php echo $this->getSkinUrl('images/dkshop/logo/casio-logo-01.jpg');?>" height="160" width="320" /></div>
-        <div class="item"><img alt="Owl Image" src="<?php echo $this->getSkinUrl('images/dkshop/logo/9c58fb6bf5a11aaee3725de890e07483.jpeg');?>" height="160" width="320" /></div>
-        <div class="item"><img alt="Owl Image" src="<?php echo $this->getSkinUrl('images/dkshop/logo/skagen-logo.jpg');?>" height="160" width="320" /></div>
-    </div>
+<!--    <div id="brands">-->
+<!--        <div class="item"><img alt="Owl Image" src="--><?php //echo $this->getSkinUrl('images/dkshop/logo/titan-logo.jpg');?><!--" height="160" width="320" /></div>-->
+<!--        <div class="item"><img alt="Owl Image" src="--><?php //echo $this->getSkinUrl('images/dkshop/logo/Tissot_logo_sport.jpg');?><!--" height="160" width="320" /></div>-->
+<!--        <div class="item"><img alt="Owl Image" src="--><?php //echo $this->getSkinUrl('images/dkshop/logo/citizen.png');?><!--" height="160" width="320" /></div>-->
+<!--        <div class="item"><img alt="Owl Image" src="--><?php //echo $this->getSkinUrl('images/dkshop/logo/casio-logo-01.jpg');?><!--" height="160" width="320" /></div>-->
+<!--        <div class="item"><img alt="Owl Image" src="--><?php //echo $this->getSkinUrl('images/dkshop/logo/9c58fb6bf5a11aaee3725de890e07483.jpeg');?><!--" height="160" width="320" /></div>-->
+<!--        <div class="item"><img alt="Owl Image" src="--><?php //echo $this->getSkinUrl('images/dkshop/logo/skagen-logo.jpg');?><!--" height="160" width="320" /></div>-->
+<!--    </div>-->
+
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('brand-image')->toHtml() ?>
 </div>
 <script type="text/javascript">
     jQuery(document).ready(function() {
