@@ -664,7 +664,7 @@ Product.ConfigurableSwatches.prototype = {
             this._E.availability.each(function(el) {
                 var el = $(el);
                 el.addClassName('in-stock').removeClassName('out-of-stock');
-                el.select('span').invoke('update', Translator.translate('In Stock'));
+                el.select('#span').invoke('update', Translator.translate('In Stock'));
             });
 
             this._E.cartBtn.btn.each(function(el, index) {
@@ -679,7 +679,7 @@ Product.ConfigurableSwatches.prototype = {
             this._E.availability.each(function(el) {
                 var el = $(el);
                 el.addClassName('out-of-stock').removeClassName('in-stock');
-                el.select('span').invoke('update', Translator.translate('Out of Stock'));
+                el.select('#span').invoke('update', Translator.translate('Out of Stock'));
             });
             this._E.cartBtn.btn.each(function(el) {
                 var el = $(el);

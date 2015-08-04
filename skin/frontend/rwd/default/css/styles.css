@@ -612,7 +612,11 @@ h6, .h6 {
 }
 
 .availability .label {
-  display: none;
+  /*display: none;*/
+    padding: 0 0 0 0;
+    font-size: 100%;
+    font-weight: 100;
+    color: #337ab7;
 }
 
 .availability.in-stock {
@@ -848,29 +852,50 @@ body:not(.customer-account) .block:first-child .block-title {
 /* -------------------------------------------- *
  * Secondary Navigation
  */
-.block-account .block-title,
-.block-cms-menu .block-title {
+.block-account .block-title {
   padding-top: 0;
   border-top: none;
 }
-.block-account li,
-.block-cms-menu li {
+.block-account li {
   text-transform: uppercase;
   font-family:Arial, sans-serif;
   margin: 7px 0;
 }
-.block-account li strong,
-.block-cms-menu li strong {
+.block-account li strong {
   font-weight: 400;
   color: #3399cc;
 }
-.block-account li a,
-.block-cms-menu li a {
+.block-account li a{
   color: #636363;
 }
-.block-account li a:hover,
-.block-cms-menu li a:hover {
+.block-account li a:hover{
   color: #3399cc;
+}
+
+/*cms menu*/
+
+.block-cms-menu .block-title {
+    padding-top: 0;
+    border-top: none;
+}
+
+.block-cms-menu li {
+    /*text-transform: uppercase;*/
+    font-family:Arial;
+    margin: 7px 0 0 10px;
+}
+
+.block-cms-menu li strong {
+    font-weight: 400;
+    color: #3399cc;
+}
+
+.block-cms-menu li a {
+    color: #636363;
+}
+
+.block-cms-menu li a:hover {
+    color: #3399cc;
 }
 
 /* ============================================ *
@@ -2624,6 +2649,14 @@ span.required:after {
   font-size: 12px;
 }
 
+label#color_label.required:after{
+    content: ' * Vui lòng chọn màu để đặt hàng ';
+    color: #df280a;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
 label.required em,
 span.required em {
   display: none;
@@ -2783,6 +2816,10 @@ p.required,
   font-size: 13px;
     /*position: absolute;*/
     bottom: -50px;
+}
+
+#product-options-wrapper .validation-advice{
+    display:none;
 }
 
 
@@ -3801,6 +3838,12 @@ a.skip-link {
   position: relative;
     text-align: left;
 }
+
+.nav-primary li.view-all {
+    display:none;
+}
+
+
 .nav-primary li.level1 a {
   border-bottom: 1px solid #cccccc;
 }
@@ -3822,6 +3865,11 @@ a.skip-link {
   .nav-primary a {
     line-height: 35px;
   }
+
+    .nav-primary li.view-all {
+        display:block;
+        text-transform: uppercase;
+    }
   .nav-primary li.level0 ul {
     display: none;
   }
@@ -8261,7 +8309,7 @@ ul.configurable-swatch-list li {
   line-height: 1.3;
 }
 .product-view .product-options .swatch-attr .select-label {
-  display: inline;
+  display: none;
   font-weight: normal;
   color: #3399cc;
   padding-left: 5px;

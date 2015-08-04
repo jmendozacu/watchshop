@@ -78,20 +78,19 @@
                 <div class="price-info">
                     <?php echo $this->getPriceHtml($_product); ?>
                     <?php echo $this->getChildHtml('bundle_prices') ?>
-                    <?php echo $this->getTierPriceHtml() ?>
+<!--                    --><?php //echo $this->getTierPriceHtml() ?>
                 </div>
 
 
                 <div class="extra-info">
-                    <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
-                    <?php echo $this->getChildHtml('product_type_availability'); ?>
+<!--                    --><?php //echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
+
+                      <?php echo $this->getChildHtml('product_type_availability'); ?>
+
+
                 </div>
-
-                <?php echo $this->getChildHtml('alert_urls') ?>
-
-
-
-                <?php echo $this->getChildHtml('other');?>
+<!--                --><?php //echo $this->getChildHtml('alert_urls') ?>
+<!--                --><?php //echo $this->getChildHtml('other');?>
 
                 <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                     <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
@@ -118,16 +117,16 @@
                 <?php elseif (!$_product->isSaleable()): ?>
                     <div class="add-to-box">
                         <?php echo $this->getChildHtml('addto') ?>
-<!--                        --><?php //echo $this->getChildHtml('sharing') ?>
+                        <?php //echo $this->getChildHtml('sharing') ?>
                     </div>
                 <?php endif; ?>
             </div>
 
-            <?php echo $this->getChildHtml('related_products') ?>
+<!--            --><?php //echo $this->getChildHtml('related_products') ?>
 
             <div class="clearer"></div>
             <?php if ($_product->isSaleable() && $this->hasOptions()):?>
-                <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+                <?php //echo $this->getChildChildHtml('container2', '', true, true) ?>
             <?php endif;?>
         </form>
         <script type="text/javascript">
