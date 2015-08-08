@@ -31,7 +31,7 @@
 <form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post" class="scaffold-form">
     <div class="fieldset">
         <h2 class="legend"><?php echo Mage::helper('contacts')->__('Contact Information') ?></h2>
-        <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
+<!--        <p class="required">--><?php //echo Mage::helper('contacts')->__('* Required Fields') ?><!--</p>-->
         <ul class="form-list">
             <li class="fields">
                 <div class="field">
@@ -63,7 +63,7 @@
     </div>
     <div class="buttons-set">
         <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
-        <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="button"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
+        <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="button button-checkout-login"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
     </div>
 </form>
 <script type="text/javascript">
