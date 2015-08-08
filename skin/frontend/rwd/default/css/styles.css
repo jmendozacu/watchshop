@@ -8329,6 +8329,10 @@ ul.configurable-swatch-list li {
 /* ============================================ *
  * Customer
  * ============================================ */
+
+.account-login .page-title{
+    padding-top: 10px;
+}
 .customer-account-login .scaffold-form label:first-child {
   width: 115px;
 }
@@ -8339,8 +8343,9 @@ ul.configurable-swatch-list li {
 .customer-account-login .col2-set .buttons-set button,
 .customer-account-login .col2-set .buttons-set .button {
   float: none;
-  min-width: 50%;
-  margin: 0;
+  min-width: 140px;
+    height: 30px;
+  margin: auto;
 }
 .customer-account-login .col2-set .col-1 ul {
   list-style: disc;
@@ -8363,7 +8368,8 @@ ul.configurable-swatch-list li {
 }
 @media only screen and (min-width: 770px) {
   .customer-account-login .col2-set .col-1 {
-    padding-right: 0;
+      padding-left: 60px;
+      padding-right: 0;
   }
   .customer-account-login .col2-set .col-2 {
     padding-left: 60px;
@@ -8372,7 +8378,7 @@ ul.configurable-swatch-list li {
 }
 @media only screen and (max-width: 479px) {
   .customer-account-login .col2-set .col-1 {
-    padding-bottom: 30px;
+      padding-bottom: 30px;
   }
   .customer-account-login .col2-set .col-2 {
     padding-top: 30px;
@@ -8380,7 +8386,12 @@ ul.configurable-swatch-list li {
   }
 }
 @media only screen and (max-width: 770px) {
-  .customer-account-login .col2-set p.required {
+  .account-login{
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+    .customer-account-login .col2-set p.required {
     display: none;
   }
 }
