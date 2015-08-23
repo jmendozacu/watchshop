@@ -5247,6 +5247,8 @@ ul.products-grid--max-4-col li{
 .block-layered-nav .block-content .toggle-tabs {
   display: none;
 }
+
+
 .block-layered-nav .block-content > dl > dt,
 .block-layered-nav .block-content .currently .block-subtitle span {
   margin: 0;
@@ -5299,6 +5301,11 @@ ul.products-grid--max-4-col li{
   border-style: solid;
   border-color: #cccccc;
 }
+
+.block-layered-nav .currently .clear-all-filters span.label{
+    display:none;
+}
+
 .block-layered-nav .block-content > dl > dd:last-child {
   border-width: 0 1px 1px 1px;
 }
